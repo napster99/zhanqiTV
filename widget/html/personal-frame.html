@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/personal.css">
+  <link rel="stylesheet" href="../css/api.css">
+  <title>个人中心</title>
+</head>
+<body>
+<div class="wrap">
+  <!-- 个人中心 -->
+  <div class="personal-center">
+       <!-- 个人资料信息 -->
+      <div class="bd">
+        <ul class="personal-message">
+          <li id="personal-photo">
+            <div class="clearfix">
+              <span class="til">头像</span>
+              <div class="mes-right">
+                <img id="avatar" src="../image/avatar.png" alt=""><i class="icon-m icon-right"></i>
+              </div>
+            </div>
+          </li>
+          <li id="personal-nickname">
+            <div class="clearfix">
+              <span class="til">昵称</span>
+              <div class="mes-right">
+                <span class="js-txt"></span><i class="icon-m icon-right"></i>
+              </div>
+            </div>
+          </li>
+          <li id="personal-gender">
+            <div class="clearfix">
+              <span class="til">性别</span>
+              <div class="mes-right">
+                <span class="js-txt"></span><i class="icon-m icon-right"></i>
+              </div>
+            </div>
+          </li>
+          <li id="personal-phone">
+            <div class="clearfix">
+              <span class="til">手机</span>
+              <div class="mes-right js-txt" ></div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <!-- 个人资料信息end -->
+
+      <!-- 底部提交按钮 -->
+      <div class="footer-btn">
+        <div class="btn-group btn-block out-btn" id="btn-quit">退出账号</div>
+      </div>
+      <!-- 底部提交按钮 -->
+  </div>
+  <!-- 个人中心 end-->
+</div>
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/lib/Base64.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/personal_frame.js"></script>
+</body>
+</html>

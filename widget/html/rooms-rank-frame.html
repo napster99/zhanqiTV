@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>直播页面</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/api.css">
+  <link rel="stylesheet" href="../css/room.css">
+
+</head>
+<body class="rooms-main hairlines">
+
+  <!-- tab排行 -->
+  <div class="ranking-list-bd">
+    <ul class="ranking-tab">
+      <div id="tabTitle" class="clearfix">
+        <li name="week">粉丝周榜</li>
+        <li name="all">粉丝总榜</li>
+      </div>
+    </ul>
+    <div class="bd">
+      <div id="week" class="hidden">
+        <ul class="clearfix">
+        </ul>
+      </div>
+      <div id="all" class="hidden">
+        <ul class="clearfix">
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- tab排行 end-->
+
+  <!-- loading页 -->
+  <div id="loadPage" class="no-page hidden">
+    <img src="../image/loading2.gif">
+    <p>正在加载中……</p>
+  </div>
+  <!-- loading页 -->
+
+</body>
+
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/rooms-rank-frame.js"></script>
+</html>

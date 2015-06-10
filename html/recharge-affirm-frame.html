@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+
+  <link rel="stylesheet" href="../css/api.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/form.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <title>充值金额</title>
+</head>
+<body>
+<div class="wrap">
+  <!-- 充值金额 -->
+  <div class="recharge">
+    <div class="til">
+      <span class="pull-right f26 org">充值就送等量战旗币！</span>
+      支付宝充值
+    </div>
+
+    <!-- 充值金额输入 -->
+    <div class="recharge-count">
+      <form action="">
+        <!-- 发叶确定 -->
+        <!-- <input type="hidden" value="1" name="amountType" class="dv">
+        <input type="hidden" value="27" name="payType" class="dv">
+        <input type="hidden" value="8" name="insitId" class="dv">
+        <input type="hidden" value="65" name="channel" class="dv">
+        <input type="hidden" value="mobile" name="payFrom" class="dv"> -->
+        <!-- 发叶确定 end-->
+        <div class="form-group">
+          <label for="" class="control-label">输入充值金额：</label>
+          <div class="form-control"><input type="text" name="amount" class="form-input" id="txt-money">元</div>
+        </div>
+        <div class="form-group">
+          <label for="" class="control-label">可获得：</label>
+          <div class="form-control"><span class="org" id="num-gold"></span>金币</div>
+        </div>
+        <div class="form-group">
+          <label for="" class="control-label">赠送：</label>
+          <div class="form-control"><span class="org" id="num-coin"></span>战旗币</div>
+        </div>
+        <div class="btn-group btn-block" id="btn-charge">确认充值</div>
+      </form>
+    </div>
+    <!-- 充值金额输入 -->
+  </div>
+  <!-- 充值金额 end-->
+</div>
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/charge-affirm_frame.js"></script>
+</body>
+</html>

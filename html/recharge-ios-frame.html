@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" href="../css/api.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <title>金币充值</title>
+</head>
+<body>
+<div class="wrap">
+  <!-- 金币充值 -->
+  <div class="recharge">
+    
+    <!-- 金币余额 -->
+    <div class="remain-balance">
+      <span class="pull-right f26">充值就送等量战旗币！</span>
+      <p class="org f32">金币余额：<span id="num-usermoney"></span></p>
+    </div>
+    <!-- 金币余额 end -->
+
+    <!-- 选择充值金额 -->
+    <div class="rechage-limit">
+      <div class="til">请选择充值金额</div>
+      <div class="limit-list">
+        <ul class="clearfix" id="list-chargeType">
+          <li class="active" data-gold="420" data-rmb="6" proid="com.gameabc.zhanqiIPhone.420gold">
+            <i class="sel"></i>
+            <p class="count-gold">420金币</p>
+            <p class="count-rmb">¥6</p>
+          </li>
+          <li data-gold="840" data-rmb="12" proid="com.gameabc.zhanqiIPhone.840gold">
+            <i class="sel"></i>
+            <p class="count-gold">840金币</p>
+            <p class="count-rmb">¥12</p>
+          </li>
+          <li data-gold="2100" data-rmb="30" proid="com.gameabc.zhanqiIPhone.2100gold">
+            <i class="sel"></i>
+            <p class="count-gold">2100金币</p>
+            <p class="count-rmb">¥30</p>
+          </li>
+          <li data-gold="3500" data-rmb="50" proid="com.gameabc.zhanqiIPhone.3500gold">
+            <i class="sel"></i>
+            <p class="count-gold">3500金币</p>
+            <p class="count-rmb">¥50</p>
+          </li>
+          <li data-gold="6860" data-rmb="98" proid="com.gameabc.zhanqiIPhone.6860gold">
+            <i class="sel"></i>
+            <p class="count-gold">6860金币</p>
+            <p class="count-rmb">¥98</p>
+          </li>
+          <li data-gold="36260" data-rmb="518" proid="com.gameabc.zhanqiIPhone.36260gold">
+            <i class="sel"></i>
+            <p class="count-gold">36260金币</p>
+            <p class="count-rmb">¥518</p>
+          </li>
+        </ul>
+      </div> 
+      <div class="sub-btn">
+        <a href="javascript:;" class="btn-group btn-block" id="btn-charge">
+          立即充值
+        </a>
+      </div>
+    </div>
+    <!-- 选择充值金额 end-->
+  </div>
+  <!-- 金币充值 end-->
+</div>
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/charge-ios_frame.js"></script>
+</body>
+</html>

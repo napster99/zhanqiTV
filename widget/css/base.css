@@ -1,0 +1,836 @@
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+input, textarea {
+    -webkit-touch-callout: inherit;
+    -webkit-user-select: text;
+    outline: none;
+}
+::-webkit-input-placeholder {
+    color: #ccc;
+}
+html {
+    height: 100%;
+    -webkit-text-size-adjust: none;
+}
+a {
+    color: #333;
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent;
+}
+a:focus {
+    outline: 0
+}
+.clearfix:after, .clearfix:before {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.clearfix:after {
+    clear: both;
+}
+.hidden {
+    display: none!important;
+    visibility: hidden!important;
+}
+.text-info {
+    color: #539cff;
+}
+.checkbox, .radio {
+    width: 26px;
+    height: 26px;
+    vertical-align: middle;
+}
+label {
+    display: block;
+}
+label .checkbox, label .radio {
+    margin-right: 16px;
+    vertical-align: -4px
+}
+.dib {
+    display: inline-block;
+    vertical-align: middle
+}
+.dib-box {
+    font-size: 0
+}
+@media (-webkit-min-device-pixel-ratio: 0) {
+    .dib-box {
+        letter-spacing: -10px
+    }
+}
+.dib-box .dib {
+    vertical-align: top;
+    font-size: 24px;
+    letter-spacing: normal;
+    word-spacing: normal
+}
+img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    border: 0;
+    vertical-align: top
+}
+*, :after, :before {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
+}
+.pull-left {
+    float: left
+}
+.pull-right {
+    float: right
+}
+/* common */
+.f32{font-size: 16px;}
+.f26{font-size: 13px;}
+.c0{color: #000;}
+.no-border{border: none !important;}
+*{-webkit-tap-highlight-color:rgba(0,0,0,0);}
+/* 遮罩层 */
+.mask{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background:rgba(0,0,0,.5);
+}
+
+.top-bar{
+  box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+}
+
+/*========= 用到icon-font的时候统一添加icon-m 统一小图标的颜色，大小；针对不同的小图标，也统一颜色 =======*/
+.icon-m{
+  font-size: 18px;
+  vertical-align: -1px;
+  color: #999;
+}
+.icon-eye{
+  color: #ff5613;
+}
+/*===================================== 三角形 ================================*/
+.arrow {
+    font-size: 0;
+    width: 0;
+    height: 0;
+    line-height: 0;
+    overflow: hidden;
+    vertical-align: -4px;
+    border: 0 dashed transparent;
+    border-width: 4px;
+}
+
+.arrow-top {
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
+}
+
+.arrow-bottom {
+    border-top-style: solid;
+    border-top-color: #fff;
+}
+
+.arrow-left {
+    border-right-style: solid;
+    border-right-color: #fff;
+}
+
+.arrow-right {
+    border-left-style: solid;
+    border-left-color: #fff;
+}
+
+/* ◤左上角 */
+.arrow-left-top {
+    border-top-style: solid;
+    border-top-color: #fff;
+    border-left-width: 0 !important;
+}
+
+/* ◥右上角 */
+.arrow-right-top {
+    border-top-style: solid;
+    border-top-color: #fff;
+    border-right-width: 0 !important;
+}
+
+/* ◣左下角 */
+.arrow-left-bottom {
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
+    border-left-width: 0 !important;
+}
+
+/* ◢右下角 */
+.arrow-right-bottom {
+    border-bottom-style: solid;
+    border-bottom-color: #fff;
+    border-right-width: 0 !important;
+}
+/*========================== 页面通用按钮组件 20141016=======================*/
+.btn-group{
+  padding: 10px 0;
+  font-size: 20px;
+  color: #fff;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #1398e2;
+}
+.btn-block{display: block;}
+
+
+
+
+
+
+/*================ 主体页面样式2014-10-16 ==============================*/
+body{
+  background: #f6f7f8;
+  height: 100%;
+  font-size: 14px;
+}
+.wrap{
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  -webkit-overflow-scrolling:touch;
+  position: relative;
+}
+.main-wrap{
+  width: 100%;
+  height: 100%;
+  font-size: 100%;
+  -webkit-overflow-scrolling:touch;
+}
+
+.top-bar{
+  background: #f6f7f8;
+}
+.top-bar-bd{
+  padding: 9px 0 10px;
+}
+.top-bar-bd .title{
+  font-size: 18px;
+  color: #333;
+  text-align: center;
+  position: relative;
+}
+.top-bar-bd .title .icon-close{
+  position: absolute;
+  right: -2px; 
+  bottom: -10px;
+  color: #999;
+  padding: 10px;
+}
+.top-bar-bd .title .icon-left{
+  position: absolute;
+  left: 0; 
+  bottom: -11px;
+  color: #333;
+  padding: 13px;
+}
+.top-bar-bd img{height: 30px;}
+.top-bar-line{
+  width: 100%;
+  height: 2px;
+  background: -webkit-gradient(linear, left top, right top, from(#00afff), color-stop(0.7, #00afff), to(#3ac367));
+}
+.footer-bar{
+  width: 100%;
+  background: #f8f8f8;
+  border-top:1px solid #b2b2b2;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  color: #666;
+  font-size: 10px;
+  padding-bottom: 3px;
+}
+.footer-bar ul li{
+  width: 25%;
+  padding-top: 6px;
+  float: left;
+  text-align: center;
+}
+.footer-bar .icon-m{
+  color: #7e7e83;
+  font-size: 24px;
+}
+.footer-bar ul li p{
+  margin-top: 3px;
+  color: #999;
+}
+.footer-bar ul li.active p,.footer-bar ul li.active .icon-m{
+  color: #1398e2;
+}
+/* 页面上列表页 */
+.video-list-wrap{
+  padding: 10px 7px;
+}
+.video-list-wrap li{
+  width: 49%;
+  float: left;
+  margin-right: 2%;
+  margin-bottom: 15px;
+}
+.video-list-wrap li.active .video-mask-box .img-mask{display: block;}
+.video-mask-box{
+  position: relative;
+}
+.video-mask-box .img-mask{
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+}
+.video-list-wrap li.active .game-pic:after{
+  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.5);
+}
+.video-list-wrap li:nth-child(2n){
+  margin-right: 0;
+}
+.video-list-wrap li .game-pic{
+  width: 100%;
+}
+.video-list-wrap .til{
+  font-size: 13px;
+  margin-top: 4px;
+  width: 100%;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.video-list-wrap .detail{
+  margin-top: 4px;
+  font-size: 10px;
+  color: #999;
+}
+.video-list-wrap .detail p,.video-list-wrap .detail span{
+  color: #999;
+}
+.video-list-wrap .detail .icon-m{
+  font-size: 10px;
+  vertical-align: 0px;
+  margin-right: 3px;
+}
+.video-list-wrap .detail .audience{
+  float: right;
+}.video-list-wrap .anchor{
+  padding-right: 38px;
+}
+.video-list-wrap .anchor span{
+  display: inline-block;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.video-list-wrap .anchor .icon-boy{
+  color: #54abfc;
+  vertical-align:4px;
+}
+.video-list-wrap .anchor .icon-girl{
+  color: #ff5cdb;
+  vertical-align:4px;
+}
+.hairlines .video-list-wrap .anchor .icon-boy,
+.hairlines .video-list-wrap .anchor .icon-girl{
+  vertical-align:0px !important;
+}
+/* =============================记录页20141019======================== */
+.record {
+  height: 100%;
+  background: #f6f7f8;
+}
+.record .arrow-bottom{
+  vertical-align: 2px;
+  border-top-color:#999;
+  margin-left: 5px;
+}
+.record .group{
+  margin-top: 15px;
+  background: #fff;
+}
+.record .group .til{
+  height: 15px;
+  line-height: 15px;
+  background: #fdf7e2;
+  border-top: 1px solid #ccc;
+  color: #c85d0e;
+  font-size: 10px;
+  padding-left: 15px;
+}
+.record .record-list{
+  padding-left: 15px;
+  border-bottom: 1px solid #ccc;
+  border-top: 1px solid #ccc;
+}
+.record .record-list li{
+  padding: 12px 0;
+  border-bottom: 1px solid #ccc;
+}
+.record .record-list li:last-child{border-bottom: none;}
+.record .record-list .count{
+  font-size: 16px;
+  color: #000;
+  margin-bottom: 2px;
+}
+.record .record-list .count .money{
+  color: #f14400;
+}
+.record .record-list .mark{
+  font-size: 12px;
+  color: #999;
+}
+.record .record-list .mark .time{
+  margin-right: 7px;
+  float: right;
+  color: #999;
+}
+.record .record-list .state{
+  float: right;
+  font-size: 12px;
+  padding-right: 6px;
+}
+.record .record-list .state p{
+  color: #999;
+  margin: 3px 0;
+}
+.record .record-list .state p.error{
+  color: #f14400;
+}
+.record .top-bar{
+  position: relative;
+}
+.record .top-bar .up-div{
+  width: 115px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background: #fff;
+  border:1px solid #ccc;
+  position: absolute;
+  left: 50%;
+  top: 55px;
+  margin-left: -57px;
+  border-radius: 5px;
+  font-size: 18px;
+  z-index: 2;
+}
+.recordUpBox{
+  width: 100%;
+  height: 100%;
+}
+/* lulu */
+.recordUpBox .up-div{
+  width: 115px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  background: #fff;
+  border:1px solid #ccc;
+  position: absolute;
+  left: 50%;
+  top: 55px;
+  margin-left: -57px;
+  border-radius: 5px;
+  font-size: 18px;
+  z-index: 2;
+}
+.recordUpBox .recordBg{
+  background: #000;
+  opacity: 0;
+}
+/* lulu */
+.record-no{
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  padding-top: 120px;
+}
+
+/* =============================== 金币充值20141020 ========================== */
+.recharge{height:100%; background: #fff;}
+.remain-balance{
+  height: 40px;
+  line-height: 40px;
+  padding: 0 15px;
+  border-bottom: 1px solid #cbcbcb;
+}
+.recharge .org{
+  color: #f14500;
+}
+.recharge .til{
+  height: 40px;
+  padding: 17px 15px 0;
+  color: #666;
+  background: #eee;
+  border-bottom: 1px solid #cbcbcb;
+  font-size: 13px;
+}
+.recharge .limit-list{
+  height: 100%;
+  padding: 20px 15px 0;
+}
+.recharge .limit-list ul{
+  width: 100%;
+}
+.recharge .limit-list ul li{
+  width: 48%;
+  height: 46px;
+  padding: 7px 0 0 20px;
+  background: #f6f7f8;
+  border:1px solid #b7b7b7;
+  float: left;
+  border-radius: 6px !important;
+  margin: 0 4% 20px 0;
+  position: relative;
+}
+.recharge .limit-list ul li.active{
+  border: 1px solid #f14500;
+}
+.recharge .limit-list ul li.active i{
+  display: inline-block;
+  width: 24px;
+  height: 22px;
+  background: url(../image/ok.png);
+  background-size: contain;
+  position: absolute;
+  left: 0;
+  top: 0;
+  border-radius: 5px 0 0 0;
+}
+.recharge .limit-list ul li:nth-child(2n){margin-right: 0;}
+.recharge .limit-list ul li .count-gold{
+  font-size: 16px;
+  color: #000;
+}
+.recharge .limit-list ul li .count-rmb{
+  font-size: 13px;
+  color: #999;
+  margin-top: 1px;
+}
+.recharge .sub-btn{padding: 0 15px 20px;}
+.recharge-manner{margin-top: 20px;}
+.recharge-manner .btn-group{margin-bottom: 20px;}
+.recharge-count{
+  padding: 12px 14px 0 14px;
+}
+.recharge-count .form-group{
+  height: 33px;
+  line-height: 33px;
+  border:none;
+  margin-bottom: 1px;
+}
+.recharge-count .control-label{
+  width: 105px;
+  font-size: 15px;
+  color: #999;
+}
+.recharge-count .form-control{
+  width: auto;
+  font-size: 15px;
+  height: auto;
+  background: none;
+}
+.recharge-count .border-all{
+  border:1px solid #afafaf;
+}
+.recharge-count .form-input{
+  width: 76px;
+  height: 27px;
+  background: #fff;
+  font-size: 24px;
+  color: #000;
+  padding-left: 3px;
+  margin-right: 5px;
+}
+.recharge-count .btn-group{margin-top:12px;}
+.recharge-ok{
+  padding: 15px;
+}
+.recharge-ok .title{
+  text-align: center;
+  font-size: 16px;
+  color: #000;
+}
+.recharge-ok .title i{
+  color: #27bd98;
+  font-size: 24px;
+  margin-right: 4px;
+  vertical-align: -8px;
+}
+.recharge-ok .recharge-main{
+  margin-top: 15px;
+  background: #f8f8f8;
+  border:1px solid #d2d2d2;
+  border-radius: 5px;
+  padding: 15px 35px 0;
+}
+.recharge-ok .recharge-main p{
+  padding-bottom: 15px;
+  color: #666;
+}
+
+.loading{
+  text-align: center;
+  padding: 50px 0;
+}
+.loading img{
+  width: 62px;
+}
+
+
+
+/*======================= 分享20141022top ========================*/
+.share-pop{
+  height: 300px;
+  width: 100%;
+  padding: 10px 8px 0;
+  background: #eee;
+  border-top: 1px solid #ccc;
+}
+/* 下拉刷新 */
+.pull-down{
+  text-align: center;
+  padding: 10px 0;
+}
+.pull-down img{width: 19px;}
+/* 断网没有页面 */
+.no-page{
+  text-align: center;
+  font-size: 15px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform:translate(-50%,-50%);
+}
+.no-page img{
+  width: 80%;
+  margin-bottom: 15px;
+}
+.no-page p{
+  color: #ccc;
+}
+
+/* =================== 解决1px问题，ios系统时给页面body添加.hairlines ================= */
+.hairlines .room-menu ul li .menu-wrap,
+.hairlines .btn-group,
+.hairlines .live-pop .border-all,
+.hairlines .recharge-count .border-all,
+.hairlines .game-list-wrap ul li .game-a,
+.hairlines .record .top-bar .up-div,
+.hairlines .recordUpBox .up-div,
+.hairlines .form-group,
+.hairlines .landing .qq-btn .btn-in,
+.hairlines .search-page .search-bg, 
+.hairlines .recharge .limit-list ul li, 
+.hairlines .recharge-count .form-input, 
+.hairlines .recharge-ok .recharge-main, 
+.hairlines .personal-change-name .change-name, 
+.hairlines .personal-center .change-sex ul li,
+.hairlines .input-wrap, 
+.hairlines .settings ul li .screen-size a, 
+.hairlines .settings ul li .location-screen .pic, 
+.hairlines .settings .proportion-dot, 
+.hairlines .day-box .day-list li, 
+.hairlines .room-menu ul li .menu-wrap, 
+.hairlines .live-pop .title, 
+.hairlines .line-box, 
+.hairlines .record .record-list, 
+.hairlines .record .record-list li, 
+.hairlines .landing .cutting-line, 
+.hairlines .search-history ul li, 
+.hairlines .tab-c, 
+.hairlines .remain-balance, 
+.hairlines .recharge .til, 
+.hairlines .personal-center .bd .personal-message, 
+.hairlines .personal-center .bd .personal-message li,
+.hairlines .settings .title-s, 
+.hairlines .settings ul li, 
+.hairlines .task-list li .main, 
+.hairlines .about-me .mes-list li, 
+.hairlines .live-pop, 
+.hairlines .share-list, 
+.hairlines .record .group .til, 
+.hairlines .share-pop, 
+.hairlines .line-box-bottom, 
+.hairlines .line-box-top, 
+.hairlines .live-pop .gift-price,
+.hairlines .anchor-list ul li,
+.hairlines .subscribe .module .title,
+.hairlines .tab-c ul li,
+.hairlines .history .til,
+.hairlines .history ul li,
+.hairlines .rooms-main .control-btn span,
+.hairlines .rooms-main .tab,
+.hairlines .ranking-list-bd .ranking-tab,
+.hairlines .ranking-list-bd .ranking-tab li,
+.hairlines .ranking-list-bd .ranking-tab li.active,
+.hairlines .rooms-main .video-list-li,
+.hairlines .intro-list-bd .intro-hd,
+.hairlines .intro-list-bd .intro-bd{
+  position: relative;
+  border:none;
+}
+/*four border*/
+.hairlines .room-menu ul li .menu-wrap:after,
+.hairlines .btn-group:after,
+.hairlines .live-pop .gift-price:after,
+.hairlines .live-pop .border-all:after,
+.hairlines .game-list-wrap ul li .game-a:after,
+.hairlines .record .top-bar .up-div:after,
+.hairlines .recordUpBox .up-div:after,
+.hairlines .form-group:after,
+.hairlines .landing .qq-btn .btn-in:after,
+.hairlines .search-page .search-bg:after,
+.hairlines .tab-c ul li:after, 
+.hairlines .recharge .limit-list ul li:after, 
+.hairlines .recharge-count .form-input:after, 
+.hairlines .recharge-ok .recharge-main:after, 
+.hairlines .personal-change-name .change-name:after, 
+.hairlines .personal-center .change-sex ul li:after, 
+.hairlines .input-wrap:after, 
+.hairlines .settings ul li .screen-size a:after, 
+.hairlines .settings ul li .location-screen .pic:after, 
+.hairlines .settings .proportion-dot:after, 
+.hairlines .day-box .day-list li:after, 
+.hairlines .room-menu ul li .menu-wrap:after, 
+.hairlines .record .record-list:after, 
+.hairlines .personal-center .bd .personal-message:after,  
+.hairlines .about-me .mes-list li:after, 
+.hairlines .recharge-count .border-all:after,
+.hairlines .subscribe .module .title:after,
+.hairlines .rooms-main .control-btn span:after,
+.hairlines .ranking-list-bd .ranking-tab li:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  border: 1px solid #ccc;
+  width: 200%;
+  height: 200%;
+  -webkit-transform: scale(0.5);
+  -webkit-transform-origin: left top;
+}
+.hairlines .record .record-list:after, 
+.hairlines .subscribe .module .title:after,
+.hairlines .about-me .mes-list li:after{
+  border-left: none; 
+  border-right:none;/* 上下都有边框的时候这样 */
+}
+/*bottom border*/
+.hairlines .live-pop .title:after, 
+.hairlines .line-box-bottom:after, 
+.hairlines .record .record-list li:after, 
+.hairlines .landing .cutting-line:after, 
+.hairlines .search-history ul li:after, 
+.hairlines .tab-c:after, 
+.hairlines .remain-balance:after, 
+.hairlines .recharge .til:after, 
+.hairlines .settings .title-s:after, 
+.hairlines .settings ul li:after, 
+.hairlines .task-list li .main:after,
+.hairlines .anchor-list ul li:after,
+.hairlines .personal-center .bd .personal-message li:after,
+.hairlines .history .til:after,
+.hairlines .history ul li:after,
+.hairlines .rooms-main .tab:after,
+.hairlines .ranking-list-bd .ranking-tab li.active:after,
+.hairlines .rooms-main .video-list-li:after,
+.hairlines .intro-list-bd .intro-hd:after,
+.hairlines .intro-list-bd .intro-bd:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom:0;
+    background: #ddd;
+    width: 100%;
+    height: 1px;
+    -webkit-transform: scaleY(0.5);
+    -webkit-transform-origin: 0 0;
+}
+.hairlines .ranking-list-bd .ranking-tab li.active:after{background: #eeeeec;}
+/* border top */
+.hairlines .line-box-top:after,
+.hairlines .live-pop:after, 
+.hairlines .share-list:after, 
+.hairlines .record .group .til:after, 
+.hairlines .share-pop:after,
+.hairlines .ranking-list-bd .ranking-tab:after{
+    content: '';
+    position: absolute;
+    left: 0;
+    top:0;
+    background: #fff;
+    width: 100%;
+    height: 1px;
+    -webkit-transform: scaleY(0.5);
+    -webkit-transform-origin: 0 0;
+}
+/* border color */
+.hairlines .live-pop .gift-price:after{border-color: #e7560e; border-radius: 10px;}
+.hairlines .live-pop .border-all:after,
+.hairlines .live-pop .border-all:after{border-color: #afafaf;}
+.hairlines .game-list-wrap ul li .game-a:after{border-color: #c5c6c6;}
+.hairlines .form-group:after, 
+.hairlines .search-page .search-bg:after{border-color: #e1e1e1; border-radius: 8px;}
+.hairlines .tab-c ul li:after,
+.hairlines .subscribe .module .title:after{border-color: #cbcbcb;}
+.hairlines .recharge .limit-list ul li:after{border-color: #b7b7b7; border-radius: 12px;}
+.hairlines .recharge-count .form-input:after{border-color: #afafaf;}
+.hairlines .recharge-ok .recharge-main:after{border-color: #d2d2d2; border-radius: 10px;}
+.hairlines .settings ul li .screen-size a:after, 
+.hairlines .settings ul li .location-screen .pic:after{border-color: #00afff;}
+.hairlines .settings ul li .screen-size a:after{border-radius: 8px;}
+.hairlines .settings .proportion-dot:after{border-color: #ebebeb; border-radius: 19px;}
+.hairlines .rooms-main .control-btn span:after{border-color:#b7bbbe; border-radius: 40px;}
+.hairlines .ranking-list-bd .ranking-tab li:after{border-color:#cfcfcf; border-top: none; border-right:none;}
+/* background color */
+.hairlines .landing .cutting-line:after{background: #dcdcdc;}
+.hairlines .settings .title-s:after, 
+.hairlines .settings ul li:after{background: #e5e5e5;}
+.hairlines .remain-balance:after, 
+.hairlines .recharge .til:after{background: #cbcbcb;}
+.hairlines .footer-bar .line-box-top:after{background: #999;}
+.hairlines .live-pop:after, 
+.hairlines .record .group .til:after, 
+.hairlines .share-pop:after{background: #ccc;}
+.hairlines .rooms-main .tab:after{background: #cfcfcf;}
+.hairlines .ranking-list-bd .ranking-tab:after{background: #cfcfcf;}
+.hairlines .rooms-main .video-list-li:after,
+.hairlines .intro-list-bd .intro-hd:after,
+.hairlines .intro-list-bd .intro-bd:after{background: #ced1d3;}
+
+/* 新添加div以后清楚元素本身的border */
+.hairlines .footer-bar{border: none;}
+.hairlines .recharge .form-group:after{border: none;}
+.hairlines .search-page .search-bg .input-search{position: absolute; z-index: 1;}
+
+/* 圆角重置 */
+.hairlines .day-box .day-list li:first-child:after {border-radius: 12px 12px 0 0;}
+.hairlines .day-box .day-list li:last-child:after {border-radius: 0 0 12px 12px;}
+.hairlines .input-wrap:after{border-radius: 8px;}
+.hairlines .landing .qq-btn .btn-in:after{border-radius: 8px;}
+.hairlines .personal-change-name .change-name:after{border-radius: 8px;}
+.hairlines .personal-center .change-sex ul li:first-child:after{border-radius: 6px 6px 0 0;}
+.hairlines .personal-center .change-sex ul li:last-child:after{border-radius: 0 0 6px 6px;}
+.hairlines .tab-c ul li:first-child:after{border-radius: 10px 0 0 10px;}
+.hairlines .tab-c ul li:last-child:after{border-radius: 0 10px 10px 0;}
+.hairlines .form-group-first:after{border-radius: 6px 6px 0 0;}
+.hairlines .form-group-last:after{border-radius: 0 0 6px 6px;}

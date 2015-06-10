@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<widget id="A6975997736566" version="0.0.1">
+  <name>-zhanqiTV</name>
+  <description>Example For APICloud.</description>
+  <author email="developer@apicloud.com" href="http://www.apicloud.com">Developer</author>
+  <content src="index.html"/>
+  <preference name="appBackground" value="rgba(0,0,0,0.0)"/>
+  <preference name="windowBackground" value="rgba(0,0,0,0.0)"/>
+  <preference name="frameBackgroundColor" value="rgba(0,0,0,0.0)"/>
+  <preference name="hScrollBarEnabled" value="false"/>
+  <preference name="vScrollBarEnabled" value="false"/>
+  <preference name="autoLaunch" value="true"/>
+  <preference name="fullScreen" value="false"/>
+  <preference name="autoUpdate" value="true"/>
+  <preference name="smartUpdate" value="true"/>
+  <preference name="debug" value="false"/>
+  <preference name="iOS7StatusBarAppearance" value="true"/>
+  <permission name="record"/>
+  <permission name="fileSystem"/>
+  <permission name="internet"/>
+  <permission name="bootCompleted"/>
+  <permission name="hardware"/>
+  <access origin="*"/>
+  <feature name="qq">
+    <param name="urlScheme" value="tencent101049628"/>
+    <param name="apiKey" value="101049628"/>
+  </feature>
+  <feature name="weiXin">
+    <param name="urlScheme" value="wx192fb7e6245e4897"/>
+    <param name="apiKey" value="wx192fb7e6245e4897"/>
+    <param name="apiSecret" value="17c69258d7d0e07b4e50699bba6e2f01" />
+  </feature>
+  <feature name="sinaWeiBo">
+    <param name="urlScheme" value="wb638703876"/>
+    <param name="apiKey" value="638703876"/>
+    <param name="rgistUrl" value="http://www.zhanqi.tv"/>
+  </feature>
+  <feature name="aliPay">
+    <param name="urlScheme" value="AliPayA6975997736566"/>
+  </feature>
+</widget>

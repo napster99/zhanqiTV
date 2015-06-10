@@ -1,0 +1,329 @@
+/* ====================== 我的20141020 ====================== */
+.my-page{
+  height: 100%;
+  background: #f6f7f8;
+}
+.my-page .my-top{
+  width: 100%;
+  height: 105px;
+  background-image: url(../image/my-banner.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+.my-page .my-top .icon-operate{
+  position: absolute;
+  right: 7px;
+  top: 55px;
+  font-size: 20px;
+  color: #fff;
+}
+.my-page .my-top .user-detail{
+  padding: 34px 0 0 15px;
+}
+.my-page .my-top .user-photo{
+  float: left;
+  margin-right: 20px;
+  width: 56px;
+  height: 56px;
+  border-radius: 56px;
+  background: #8eddf7;
+  position: relative;
+}
+.my-page .my-top .user-photo img{
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+.my-page .my-top .user-mes{float: left;}
+.my-page .my-top .user-mes .name{
+  color: #fff;
+  font-size: 20px;
+  margin: 10px 0 6px 0;
+}
+.my-page .my-top .user-mes .money{
+  font-size: 12px;
+  float: left;
+  margin-right: 10px;
+  color: #fff;
+}
+.my-page .my-top .user-mes .money span{color: #fff;}
+.my-page .my-top .user-mes .add-btn{
+  float: left;
+  text-align: center;
+  border: 2px solid #fff;
+  border-radius: 12px;
+  font-size: 9px;
+  color: #fff;
+  padding: 1px 7px;
+  margin-top: -3px;
+}
+.my-page .my-top .user-mes .register-btn{
+  font-size: 20px;
+  color: #fff;
+  margin-top: 20px;
+}
+.my-page .ad{
+  padding: 10px 0;
+  background: #f6f7f8;
+}
+.my-page .ad img{
+  width: 100%;
+  height: 45px;
+}
+.my-page .task-list .icon-right{
+  position: absolute;
+  right: 8px;
+  top: 23px;
+}
+.task{
+  height: 100%;
+  background: #f6f7f8;
+}
+.task .bd{
+  padding-top: 34px;
+  padding-bottom: 20px;
+}
+.task-list{
+  border-top:1px solid #d4d5d5;
+  border-bottom:1px solid #d4d5d5;
+}
+.task-list li{
+  position: relative;
+  font-size: 12px;
+  background: #fff;
+}
+.task-list li .main{
+  margin-left: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+.task-list li.active, 
+.subscribe .anchor-list li.active{
+  background: #e5e5e5;
+}
+.task-list li.active .btn-task{
+  background: #008ccc;
+}
+.task-list li .til{
+  font-size: 16px;
+  color: #000;
+}
+.task-list li .til .icon-m{
+  margin-right: 5px;
+  font-size: 16px;
+}
+.task-list li .tip{
+  color: #999;
+  margin-top: 7px;
+}
+.task-list li:last-child .main{border-bottom: none;}
+.task-list li .btn-task{
+  width: 50px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  color: #fff;
+  background: #00afff;
+  border-radius: 3px;
+  position: absolute;
+  right: 7px;
+  top: 20px;
+  z-index: 3;
+}
+.task-list li.active .btn-finish,
+.task-list li .btn-finish{
+  background: #999;
+}
+  .subscribe{
+  height: 100%;
+  background: #eee;
+}
+.subscribe .module .title{
+  min-height: 40px;
+  position: relative;
+  padding: 7px;
+  border-bottom: 1px solid #cbcbcb;
+  border-top: 1px solid #cbcbcb;
+  background: #eee;
+}
+.subscribe .edit-btn{
+  padding: 6px;
+  background: #1398e2;
+  color: #fff;
+  border-radius: 3px;
+  float: right;
+}
+.subscribe .module .title-name{
+  position: absolute;
+  bottom: 7px;
+  left: 7px;
+}
+.subscribe .module .module-bd{
+  background: #fff;
+}
+.subscribe-edit-btn{
+  float: right;
+}
+.subscribe-edit-btn li{
+  float: left;
+  padding: 6px 10px;
+  background: #1398e2;
+  color: #fff;
+  border-radius: 3px;
+}
+.subscribe-edit-btn li:first-child{
+  margin-right: 7px;
+  background: #f14500;
+}
+.subscribe .anchor-list .icon-close{
+  float: right;
+  margin-top: 10px;
+  font-size: 12px;
+  padding: 10px;
+}
+.anchor-list ul li{
+  border-bottom: 1px solid #cbcbcb;
+  padding: 5px 7px;
+}
+.anchor-list ul li .user-name{
+  font-size: 16px;
+  margin-top: 7px;
+}
+.anchor-list ul li .order-count{
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+.anchor-list .user-photo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  float: left;
+  margin-right: 10px;
+}
+/* =============================== 个人中心20141019 ========================== */
+.personal-center{
+  height: 100%;
+  background: #f6f7f8;
+  position: relative;
+}
+.personal-center .bd{
+  padding-top: 34px;
+  font-size: 16px;
+}
+.personal-center .bd .personal-message{
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+  padding: 0 0 0 15px;
+}
+.personal-center .bd .personal-message li{
+  padding: 14px 7px 14px 0;
+  border-bottom: 1px solid #ccc;
+  position: relative;
+  z-index: 3;
+}
+.personal-center .bd .personal-message li:last-child{border-bottom: none;}
+.personal-center .bd .personal-message li:first-child{padding: 7px 7px 7px 0;}
+.personal-center .bd .personal-message li:first-child .til{margin-top: 12px;}
+.personal-center .bd .personal-message li .icon-m{margin-left: 10px;}
+.personal-center .bd .personal-message li:first-child .icon-m{vertical-align: -12px;}
+.personal-center .bd .personal-message li .til{color: #000; float: left;}
+.personal-center .bd .personal-message li .mes-right{
+  float: right;
+  color: #999;
+}
+.personal-center .bd .personal-message li .mes-right img{
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+}
+.personal-center .footer-btn{
+  position: absolute;
+  bottom: 25px;
+  width: 100%;
+  padding: 7px;
+}
+.personal-center .footer-btn .out-btn{
+  background: #e21313;
+}
+.personal-change-name{
+  height: 100%;
+  background: #f6f7f8;
+}
+.personal-change-name .bd{
+  padding: 33px 7px;
+}
+.personal-change-name .change-name{
+  width: 100%;
+  height: 41px;
+  line-height:41px;
+  background: #fff;
+  border:1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 30px;
+}
+.personal-change-name .change-name input{
+  width: 100%;
+  height: 100%;
+  padding: 0 5px;
+  position: relative;
+  z-index: 3;
+}
+.personal-center .change-sex,
+.personal-center .bind-phone{
+  padding: 33px 7px 7px;
+}
+.personal-center .change-sex ul li{
+  height: 45px;
+  line-height: 45px;
+  border:1px solid #ccc;
+  margin-top: -1px;
+  background: #fff;
+  font-size: 16px;
+  color: #000;
+  padding: 0 10px;
+}
+.personal-center .change-sex ul li:first-child{
+  border-radius: 3px 3px 0 0;
+}
+.personal-center .change-sex ul li:last-child{
+  border-radius: 0 0 3px 3px;
+}
+.personal-center .change-sex ul li i{
+  float: right;
+  margin-top: 15px;
+}
+.personal-center .change-sex ul li.active .icon-m{color:#1398e2;}
+.personal-center .bind-phone{font-size: 16px;}
+.personal-center .bind-phone .tip{margin:10px 0; font-size: 12px;}
+.input-wrap{
+  height: 46px;
+  line-height: 45px;
+  border:1px solid #ccc;
+  background: #fff;
+  border-radius: 3px;
+  position: relative;
+}
+.input-wrap input{
+  width: 100%;
+  height: 100%;
+  padding: 0 7px;
+  position: relative;
+  z-index: 3;
+}
+.personal-center .bind-phone .code-btn{
+  padding: 10px;
+  position: absolute;
+  background: #34c42d;
+  color: #fff;
+  border-radius: 2px;
+  right: 5px;
+  top: 5px;
+  z-index: 10;
+  font-size: 14px;
+  line-height: 1;
+}

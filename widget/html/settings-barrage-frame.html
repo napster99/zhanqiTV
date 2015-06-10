@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+
+  <link rel="stylesheet" href="../css/api.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/settings.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../script/lib/ratchet/ratchet.css">
+  <title>弹幕设置</title>
+</head>
+<body>
+<div class="wrap">
+  <!-- 弹幕设置 -->
+  <div class="settings">
+
+    <p class="title-s"></p>
+    <ul>
+      <li>
+        <div id="barrageCon" class="pull-right">
+          <div class="toggle active" id="barrageSwitch">
+            <div class="toggle-handle"></div>
+          </div>
+        </div>
+        弹幕开关
+      </li>
+      <li>
+        <div class="pull-right">
+          <div class="proportion-bg">
+            <div class="proportion-dot"></div>
+            <div class="proportion-in"></div>
+          </div>
+        </div>
+        弹幕透明度
+      </li>
+      <li>
+        <div class="clearfix">
+          <div id="size" class="pull-right screen-size">
+            <a name="big" href="javascript:;">大</a>
+            <a name="normal" href="javascript:;">中</a>
+            <a name="small" href="javascript:;">小</a>
+          </div>
+          弹幕大小
+        </div>
+        <div class="preview-size clearfix">
+          <div id="preView" class="preview-word">
+            弹幕预览，这效果怎么样？
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="clearfix">
+          <div id="pos" class="pull-right">
+            <div class="location-screen all-screen" name="full">
+              <div class="pic">
+                <p class="line-pic line-1"></p>
+                <p class="line-pic line-2"></p>
+                <p class="line-pic line-3"></p>
+              </div>
+              <span name="full" class="active">全屏</span>
+            </div>
+            <div class="location-screen top-screen" name="up">
+              <div class="pic">
+                <p class="line-pic line-4"></p>
+              </div>
+              <span name="up">上方</span>
+            </div>
+            <div class="location-screen bottom-screen" name="down">
+              <div class="pic">
+                <p class="line-pic line-5"></p>
+              </div>
+              <span name="down">下方</span>
+            </div>
+          </div>
+
+          弹幕位置
+        </div>
+      </li>
+    </ul>
+  </div>
+  <!-- 弹幕设置 end-->
+</div>
+</body>
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/lib/ratchet/ratchet.js"></script>
+<script src="../script/settings-barrage_frame.js"></script>
+</html>

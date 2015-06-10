@@ -1,0 +1,63 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>直播页面</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/room.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/api.css">
+
+</head>
+<body>
+<div class="wrap">
+  
+  <!-- 直播间页面 -->
+  <div id="liveRoom" class="live-room">
+    <div id="christmas" class="christmas hidden"></div>
+    <!-- 聊天对话部分 -->
+    <div id="chatList" class="chat-list-bd">
+      <div id="welcome" class="title"></div>
+      <ul class="chat-list"></ul>
+    </div>
+    <!-- 聊天对话部分 end-->
+
+
+
+  </div>
+  <!-- 直播间页面 end -->
+
+
+  <!-- 遮罩层 -->
+  <div class="mask hidden"></div>
+  <!-- 遮罩层 end-->
+  <!-- 金币pop -->
+  <div class="gold-pop hidden">
+    <div class="gold-pic"></div>
+    <div class="gold-btn">+<span id="sendGoldCount"></span><span id="sendSpecies"></span></div>
+  </div>
+  <!-- 金币pop end-->
+
+  <!-- 礼物pop -->
+  <div id="giftPop" class="gold-pop hidden">
+  </div>
+  <!-- 礼物pop -->
+
+  <!-- 消息条数提示 -->
+  <div id="bubbleTip" class="bubble-tip-box hidden">
+    <div class="bubble-tip"></div>
+  </div>
+  <!-- 消息条数提示 -->
+
+</div>
+
+</body>
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/rooms-chat-frame.js"></script>
+</html>

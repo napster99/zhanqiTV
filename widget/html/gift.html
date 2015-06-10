@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/api.css">
+  <link rel="stylesheet" href="../css/room.css">
+  <title>礼物</title>
+</head>
+<body>
+<!-- 赠送礼物弹层 -->
+  <div id="giftPop" class="live-pop" >
+    <!-- 数量输入框 -->
+    <div id="countPop" class="count-pop hidden">
+      <div class="arrow arrow-bottom"><input ></div>
+      <ul id="countList"></ul>
+    </div>
+    <!-- 数量输入框 end-->
+    <div class="title">
+      赠送礼物
+      <span id="recharge" class="pull-right"><i class="icon-m icon-record"></i>充值金币</span>
+    </div>
+    <!-- 礼物列表 -->
+    <ul id="giftList" class="gift-list clearfix">
+      <li>
+        <div class="gift-border"><img src="../image/gift-crnk.png" class="gift-icon"></div>
+        <p>大宝剑</p>
+      </li>
+      <li>
+        <div class="gift-border"><img src="../image/gift-dbj.png" class="gift-icon"></div>
+        <p>超人内裤</p>
+      </li>
+      <li>
+        <div class="gift-border"><img src="../image/gift-mlt.png" class="gift-icon"></div>
+        <p>麻辣烫</p>
+      </li>
+      <li>
+        <div class="gift-border"><img src="../image/gift-d.png" class="gift-icon"></div>
+        <p>锅</p>
+      </li>
+      <li>
+        <div class="gift-border"><img src="../image/gift-l.png" class="gift-icon"></div>
+        <p>溜</p>
+      </li>
+      <li class="active">
+        <div class="gift-border"><img src="../image/gift-g.png" class="gift-icon"></div>
+        <p>顶</p>
+      </li>
+    </ul>
+    <!-- 礼物列表 end-->
+
+    <!-- 礼物价钱显示 -->
+    <div class="gift-price">
+      <i id="giftName">--</i>：<i id="giftCount">--</i><span id="coinType">--</span>
+    </div>
+    <!-- 礼物价钱显示 end-->
+
+    <!-- 赠送详情 -->
+    <div class="send-detail">
+      <span id="sendGift" class="send-btn">赠送</span>
+      数量：<input type="number" class="input-count" id="inputCount" value="1">个
+    </div>
+    <!-- 赠送详情 end-->
+  </div>
+  <!-- 赠送礼物弹层 end-->
+</body>
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/gift.js"></script>
+</html>
+
+

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+  <head>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta charset='utf-8'>
+    
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    <link rel="stylesheet" href="./css/api.css">
+    <link rel="stylesheet" href="./css/base.css">
+    <link rel="stylesheet" href="./css/font-icon.css">
+    <link rel="stylesheet" href="./css/home.css">
+  </head>
+  <body>
+    <div class="wrap" id="wrap">
+      <!-- 首页 -->
+      <div class="home-page" id="main">
+        <!-- top顶部 -->
+        <div class="top-bar" id="head">
+          <div class="top-bar-bd clearfix">
+            <img id="logo" src="./image/logo.png" alt="" tapmode="active" onclick="openMain()">
+            <i id="gameClose" class="icon-m icon-left hidden"></i>
+            <ul class="operation-list">
+              <!-- <li tapmode="active" onclick="openFollows()">
+                <i class="icon-m icon-collect-line"></i>
+              </li> -->
+              <li tapmode="active" onclick="openHistory()">
+                <i class="icon-m icon-timepiece"></i>
+              </li>
+              <li tapmode="active" onclick="openSearch()" id="btnSearch">
+                <i class="icon-m icon-search"></i>
+              </li>
+            </ul>
+            <span id="gameTitle" class="name hidden"></span>
+          </div>
+          <div class="top-bar-line"></div>
+        </div>
+        <!-- top顶部 -->
+      </div>
+      <!-- 底部 -->
+      <div class="footer-bar" id="footer">
+        <div class="line-box-top">
+          <ul class="clearfix" id="footer-nav">
+            <li class="active">
+              <!-- <i class="nav-pic nav-01"></i> -->
+              <i class="icon-m icon-home"></i>
+              <p>首页</p>
+            </li>
+            <li>
+              <!-- <i class="nav-pic nav-02"></i> -->
+              <i class="icon-m icon-directseeding-line"></i>
+              <p>直播</p>
+            </li>
+            <li>
+              <!-- <i class="nav-pic nav-03"></i> -->
+              <i class="icon-m icon-more-line"></i>
+              <p>游戏</p>
+            </li>
+            <li>
+              <!-- <i class="nav-pic nav-04"></i> -->
+              <i class="icon-m icon-my-line"></i>
+              <p>我的</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <!-- 底部 -->
+    </div>
+  </body>
+<script src="./script/lib/zepto.min.js"></script>
+<script src="./script/api.js"></script>
+<script src="./script/common.js"></script>
+<script src="./script/index.js"></script>
+</html>

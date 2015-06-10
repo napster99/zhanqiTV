@@ -1,0 +1,274 @@
+@font-face {
+    font-family: icomoon;
+    src: url(../f/icomoon.eot?z1u3hi);
+    src: url(../f/icomoon.eot?#iefixz1u3hi) format('embedded-opentype'), url(../f/icomoon.woff?z1u3hi) format('woff'), url(../f/icomoon.ttf?z1u3hi) format('truetype'), url(../f/icomoon.svg?z1u3hi#icomoon) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+[class*=" icon-"], [class^=icon-] {
+    font-family: icomoon;
+    speak: none;
+    font-style: normal;
+    font-weight: 400;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+.icon-add:before {
+  content: "\e600";
+}
+
+.icon-boy:before {
+  content: "\e601";
+}
+
+.icon-chat:before {
+  content: "\e602";
+}
+
+.icon-chat2:before {
+  content: "\e603";
+}
+
+.icon-chat-current:before {
+  content: "\e604";
+}
+
+.icon-chat-current2:before {
+  content: "\e605";
+}
+
+.icon-checked:before {
+  content: "\e606";
+}
+
+.icon-close:before {
+  content: "\e607";
+}
+
+.icon-collect:before {
+  content: "\e608";
+}
+
+.icon-collect-line:before {
+  content: "\e609";
+}
+
+.icon-dailyask:before {
+  content: "\e60a";
+}
+
+.icon-delete:before {
+  content: "\e60b";
+}
+
+.icon-directseeding:before {
+  content: "\e60c";
+}
+
+.icon-directseeding-line:before {
+  content: "\e60d";
+}
+
+.icon-fullscreen:before {
+  content: "\e60e";
+}
+
+.icon-girl:before {
+  content: "\e60f";
+}
+
+.icon-headsculpture:before {
+  content: "\e610";
+}
+
+.icon-home:before {
+  content: "\e611";
+}
+
+.icon-home-line:before {
+  content: "\e612";
+}
+
+.icon-ic_change:before {
+  content: "\e613";
+}
+
+.icon-ic_install:before {
+  content: "\e614";
+}
+
+.icon-ic_phone:before {
+  content: "\e615";
+}
+
+.icon-ic_play:before {
+  content: "\e616";
+}
+
+.icon-ic_question:before {
+  content: "\e617";
+}
+
+.icon-ic_register:before {
+  content: "\e618";
+}
+
+.icon-ic_signin:before {
+  content: "\e619";
+}
+
+.icon-ic_task:before {
+  content: "\e61a";
+}
+
+.icon-introduce:before {
+  content: "\e61b";
+}
+
+.icon-introduce2:before {
+  content: "\e61c";
+}
+
+.icon-introduce-current:before {
+  content: "\e61d";
+}
+
+.icon-introduce-current2:before {
+  content: "\e61e";
+}
+
+.icon-left:before {
+  content: "\e61f";
+}
+
+.icon-mission:before {
+  content: "\e620";
+}
+
+.icon-more:before {
+  content: "\e621";
+}
+
+.icon-more-line:before {
+  content: "\e622";
+}
+
+.icon-mywallet:before {
+  content: "\e623";
+}
+
+.icon-my:before {
+  content: "\e624";
+}
+
+.icon-my-line:before {
+  content: "\e625";
+}
+
+.icon-operate:before {
+  content: "\e626";
+}
+
+.icon-play:before {
+  content: "\e627";
+}
+
+.icon-qq:before {
+  content: "\e628";
+}
+
+.icon-ranking:before {
+  content: "\e629";
+}
+
+.icon-ranking2:before {
+  content: "\e62a";
+}
+
+.icon-ranking-current:before {
+  content: "\e62b";
+}
+
+.icon-ranking-current2:before {
+  content: "\e62c";
+}
+
+.icon-report:before {
+  content: "\e62d";
+}
+
+.icon-right:before {
+  content: "\e62e";
+}
+
+.icon-search:before {
+  content: "\e62f";
+}
+
+.icon-set:before {
+  content: "\e630";
+}
+
+.icon-share:before {
+  content: "\e631";
+}
+
+.icon-share2:before {
+  content: "\e632";
+}
+
+.icon-spectator:before {
+  content: "\e633";
+}
+
+.icon-subscribe:before {
+  content: "\e634";
+}
+
+.icon-subscribe2:before {
+  content: "\e635";
+}
+
+.icon-success:before {
+  content: "\e636";
+}
+
+.icon-theproblemoffeedback:before {
+  content: "\e637";
+}
+
+.icon-tiger:before {
+  content: "\e638";
+}
+
+.icon-timepiece:before {
+  content: "\e639";
+}
+
+.icon-unchecked:before {
+  content: "\e63a";
+}
+
+.icon-video:before {
+  content: "\e63b";
+}
+
+.icon-video2:before {
+  content: "\e63c";
+}
+
+.icon-video3:before {
+  content: "\e63d";
+}
+
+.icon-video-current:before {
+  content: "\e63e";
+}
+
+.icon-video-current2:before {
+  content: "\e63f";
+}
+

@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="maximum-scale=1,minimum-scale=1,user-scalable=1,width=device-width,initial-scale=1"/>
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/api.css">
+  <title>每日任务</title>
+  <style>
+  .task{
+  height: 100%;
+  background: #f6f7f8;
+}
+.task .bd{
+  padding-top: 34px;
+  padding-bottom: 20px;
+}
+.task-list{
+  border-top:1px solid #d4d5d5;
+}
+.task-list li{
+  position: relative;
+  font-size: 12px;
+  background: #fff;
+}
+.task-list li .main{
+  margin-left: 15px;
+  padding: 12px 0;
+  border-bottom: 1px solid #ddd;
+}
+.task-list li.active, 
+.subscribe .anchor-list li.active{
+  background: #e5e5e5;
+}
+.task-list li.active .btn-task{
+  background: #008ccc;
+}
+.task-list li .til{
+  font-size: 16px;
+  color: #000;
+}
+.task-list li .til .icon-m{
+  margin-right: 5px;
+  font-size: 18px;
+}
+.task-list li .tip{
+  color: #999;
+  margin-top: 7px;
+}
+.task-list li:last-child .main{border-bottom: none !important;}
+.task-list li .btn-task{
+  width: 48px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  background: #00afff;
+  border-radius: 3px;
+  position: absolute;
+  right: 7px;
+  top: 20px;
+  z-index: 3;
+  font-size: 13px;
+}
+.task-list li.active .btn-finish,
+.task-list li .btn-finish{
+  background: #d8d8d8;
+}
+.hairlines .task-list li:last-child .main:after{background:none;}
+.task-list .icon-right{
+  position: absolute;
+  top: 10px;
+  padding: 15px;
+  right: 0;
+  font-size: 14px;
+}
+</style>
+</head>
+<body class="hairlines">
+<div class="wrap">
+  <!-- 每日任务 -->
+  <div class="task">
+    <!-- top顶部 -->
+    <div class="top-bar">
+      <div class="top-bar-bd">
+        <p class="title">
+          <i class="icon-m icon-left"></i>
+          每日任务
+        </p>
+      </div>
+      <div class="top-bar-line"></div>
+    </div>
+    <!-- top顶部 -->
+    
+    <div class="scroll-wrap">
+      <div class="bd">
+      <ul class="task-list">
+        <li>
+          <a href="javascript:;" class="btn-task">领取</a>
+          <div class="main">
+            <p class="til"><i class="icon-m icon-ic_install"></i>安装APP</p>
+            <p class="tip">安装登录后观看5分钟领取600金币</p>
+          </div>
+        </li>
+        <li>
+          <a href="javascript:;" class="btn-task">观看</a>
+          <div class="main">
+            <p class="til"><i class="icon-m icon-ic_play"></i>APP观看直播</p>
+            <p class="tip">绑定安全手机，领取2000战旗币</p>
+          </div>
+        </li>
+        <li>
+          <i class="icon-m icon-right"></i>
+          <div class="main">
+            <p class="til"><i class="icon-m icon-ic_register"></i>注册任务</p>
+            <p class="tip">恭喜您注册成功，您可领取500战旗币</p>
+          </div>
+        </li>
+        <li>
+          <i class="icon-m icon-right"></i>
+          <div class="main">
+            <p class="til"><i class="icon-m icon-ic_phone"></i>绑定手机</p>
+            <p class="tip">绑定安全手机，领取2000战旗币</p>
+          </div>
+        </li>
+        <li class="active">
+          <i class="icon-m icon-right"></i>
+          <div class="main">
+            <p class="til"><i class="icon-m icon-ic_change"></i>更换头像</p>
+            <p class="tip">更换头像，领取100战旗币</p>
+          </div>
+        </li>
+        <li>
+          <i class="icon-m icon-right"></i>
+          <div class="main">
+            <p class="til"><i class="icon-m icon-ic_question"></i>每日一问</p>
+            <p class="tip">回答问题轻松获得100战旗币奖励</p>
+          </div>
+        </li>
+        <li>
+          <a href="javascript:;" class="btn-task btn-finish">领取</a>
+          <div class="main">
+            <p class="til"><i class="icon-m icon-ic_task"></i>分享直播</p>
+            <p class="tip">每成功邀请一个即可获得100战旗币</p>
+          </div>
+        </li>
+        <li>
+          <a href="javascript:;" class="btn-task">领取</a>
+          <div class="main">
+            <p class="til"><i class="icon-m icon-ic_signin"></i>七日签到</p>
+            <p>&nbsp;</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+    </div>
+    
+
+  </div>
+  <!-- 每日任务 end-->
+</div>
+</body>
+
+</html>

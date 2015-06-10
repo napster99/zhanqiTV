@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/personal.css">
+  <link rel="stylesheet" href="../css/api.css">
+  <title>绑定手机</title>
+</head>
+<body class="hairlines">
+<div class="wrap">
+  <div class="personal-center">
+      <!-- 修改性别信息 -->
+      <div class="bind-phone">
+        <form id="box-editPhone">
+          <div class="input-wrap">
+            <a href="javascript:;" class="code-btn" id="btn-editPhone-requireCode">获取验证码</a>
+            <input type="text" id="txt-phone" name="mobile" data-type="phone" data-required="看官老爷，请留下您的手机号码" data-invalide="输入11位数字" placeholder="请输入您的手机号" autocapitalize="off" maxLength='11'/>
+          </div>
+          <p class="tip">绑定手机可确保你的账号安全性，并且可以每日通过任务领取战旗币。</p>
+          <div class="input-wrap">
+            <input type="text" maxlength="6" id="txt-code" name="code" data-type="code" data-required="看官老爷，请留下您的验证码" data-invalide="6位数字" placeholder="请输入您收到的验证码" autocapitalize="off" />
+          </div>
+        </form>
+      </div>
+      <!-- 修改性别信息 end -->
+
+      <!-- 底部提交按钮 -->
+      <div class="footer-btn">
+        <div class="btn-group btn-block" id="btn-editPhone-save">提交</div>
+      </div>
+      <!-- 底部提交按钮 -->
+  </div>
+</div>
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/personal-phone_frame.js"></script>
+</body>
+
+</html>

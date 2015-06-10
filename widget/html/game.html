@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/api.css">
+  <title>游戏列表页</title>
+  <style>
+    .game-list .top-bar .operation-list{
+      float: right;
+      padding-right: 7px;
+      margin-top: 5px;
+    }
+    .game-list .top-bar-bd{padding: 9px 0 6px;}
+    .game-list-name{
+      display: inline-block;
+      width: 100%;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow:ellipsis;
+    }
+    .game-list .top-bar .operation-list li{
+      float: left;
+      margin-left: 25px;
+    }
+    .game-list .top-bar .icon-m{
+      font-size: 19px;
+      color: #999;
+    }
+    .game-list-wrap{
+      padding: 8px;
+    }
+    .game-list-wrap ul{
+      width: 100%;
+    }
+    .game-list-wrap ul li{
+      width: 32%;
+      margin-right: 2%;
+      text-align: center;
+      float: left;
+      margin-bottom: 10px;
+    }
+    .game-list-wrap ul li:nth-child(3n){
+      margin-right: 0;
+    }
+    .game-list-wrap ul li .game-a{
+      display: inline-block;
+      width: 100%;
+      background: #fff;
+      border:1px solid #c5c6c6;
+      padding: 3px;
+    }
+    .game-list-wrap ul li .game-a img{
+      width: 100%;
+      margin-bottom: 4px;
+    }
+    </style>
+</head>
+<body>
+<div id="wrap" class="wrap">
+  <!-- 游戏列表页 -->
+  <div id="homePage" class="game-list">
+    <!-- 游戏列表 -->
+    <div class="game-list-wrap" id="main">
+      <ul class="clearfix" id="gameList">
+      </ul>
+    </div>
+    <!-- 游戏列表 end-->
+
+  </div>
+  <!-- 游戏列表页 end-->
+
+  <!-- loading页 -->
+  <div id="loadPage" class="no-page">
+    <img src="../image/loading2.gif">
+    <p>正在加载中……</p>
+  </div>
+  <!-- loading页 -->
+
+  <!-- 断网没有页面 -->
+  <div id="noPage" class="no-page hidden">
+    <img src="../image/no-page.gif">
+    <p>页面加载失败</p>
+    <p>请点击页面刷新</p>
+  </div>
+  <!-- 断网没有页面 -->
+  
+</div>
+</body>
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/lib/jquery.lazyload.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/game.js"></script>
+</html>

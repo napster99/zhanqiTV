@@ -1,0 +1,40 @@
+/*圣诞节活动*/
+.footer-bar .nav-pic{
+  display: inline-block;
+  width: 36px;
+  height: 25px;
+}
+.footer-bar .nav-01{
+  background:url(../image/nav1.png);
+  background-size: contain;
+}
+.footer-bar .active .nav-01{
+  background:url(../image/nav1-bg.png);
+  background-size: contain;
+}
+.footer-bar .nav-02{
+  background:url(../image/nav2.png);
+  background-size: contain;
+}
+.footer-bar .active .nav-02{
+  background:url(../image/nav2-bg.png);
+  background-size: contain;
+}
+.footer-bar .nav-03{
+  background:url(../image/nav3.png);
+  background-size: contain;
+}
+.footer-bar .active .nav-03{
+  background:url(../image/nav3-bg.png);
+  background-size: contain;
+}
+.footer-bar .nav-04{
+  background:url(../image/nav4.png);
+  background-size: contain;
+}
+.footer-bar .active .nav-04{
+  background:url(../image/nav4-bg.png);
+  background-size: contain;
+}
+.footer-bar ul li p{margin-top: 0;}
+.footer-bar ul li{padding-top: 5px;}

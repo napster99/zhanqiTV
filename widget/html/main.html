@@ -1,0 +1,440 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+  <head>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta charset='utf-8'>
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+    
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/font-icon.css">
+    <link rel="stylesheet" href="../css/api.css">
+    <link rel="stylesheet" href="../css/home.css">
+  </head>
+  <body>
+    <div class="main-wrap" id="wrap">
+      <!-- 首页 -->
+      <div id="homePage" class="home-page ">
+        <!-- 滚动展示 -->
+        <div class="hd">
+          <div id="dotBox" class="dot-box clearfix">
+          </div>
+          <div class="word-box">
+            <p id="title" class="title"></p>
+          </div>
+          <div id="slider" class="swipe" style="visibility:visible;">
+            <ul class="swipe-wrap" id="banner-content">
+              <li>
+                <img src="../image/default_bpic.png" class="show-pic">
+                <!-- <p id="title">加载中...</p> -->
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 滚动展示 end-->
+
+        <!-- 热门直播 -->
+        <div keyword="livenow" class="video-list-wrap" id="main">
+          <div class="">
+            <ul class="clearfix">
+              <li tapmode="active" onclick="enterRooms(this);">
+                <div>
+                  <div class="img-mask"></div>
+                  <img src="../image/default_bpic.png" alt="" class="game-pic">
+                </div>
+                <div class="til">加载中...</div>
+                <div class="detail clearfix">
+                  <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                  <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                </div>
+              </li>
+              <li tapmode="active" onclick="enterRooms(this);">
+                <div>
+                  <div class="img-mask"></div>
+                  <img src="../image/default_bpic.png" alt="" class="game-pic">
+                </div>
+                <div class="til">加载中...</div>
+                <div class="detail clearfix">
+                  <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                  <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                </div>
+              </li>
+              <li tapmode="active" onclick="enterRooms(this);">
+                <div>
+                  <div class="img-mask"></div>
+                  <img src="../image/default_bpic.png" alt="" class="game-pic">
+                </div>
+                <div class="til">加载中...</div>
+                <div class="detail clearfix">
+                  <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                  <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                </div>
+              </li>
+              <li tapmode="active" onclick="enterRooms(this);">
+                <div>
+                  <div class="img-mask"></div>
+                  <img src="../image/default_bpic.png" alt="" class="game-pic">
+                </div>
+                <div class="til">加载中...</div>
+                <div class="detail clearfix">
+                  <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                  <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                </div>
+              </li>
+              <li tapmode="active" onclick="enterRooms(this);">
+                <div>
+                  <div class="img-mask"></div>
+                  <img src="../image/default_bpic.png" alt="" class="game-pic">
+                </div>
+                <div class="til">加载中...</div>
+                <div class="detail clearfix">
+                  <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                  <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                </div>
+              </li>
+              <li tapmode="active" onclick="enterRooms(this);">
+                <div>
+                  <div class="img-mask"></div>
+                  <img src="../image/default_bpic.png" alt="" class="game-pic">
+                </div>
+                <div class="til">加载中...</div>
+                <div class="detail clearfix">
+                  <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                  <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- 热门直播 end-->
+
+        <!-- 英雄联盟 -->
+        <div keyword="lol" class="game-box">
+          <div class="game-name"><i class="icon-m icon-right js-toGameLive"></i><span name="title">英雄联盟</span></div>
+          <!-- 视频列表 -->
+          <div class="video-list-wrap">
+            <div class="">
+              <ul class="clearfix">
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 视频列表 end-->
+        </div>
+        <!-- 英雄联盟 end-->
+
+        <!-- Dota2 -->
+        <div keyword="dota" class="game-box">
+          <div class="game-name"><i class="icon-m icon-right js-toGameLive"></i><span name="title">Dota2</span></div>
+          <!-- 视频列表 -->
+          <div class="video-list-wrap">
+            <div class="">
+              <ul class="clearfix">
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 视频列表 end-->
+        </div>
+        <!-- Dota2 end-->
+
+        <!-- 三国杀 -->
+        <div keyword="sanguosha" class="game-box">
+          <div class="game-name"><i class="icon-m icon-right js-toGameLive"></i><span name="title">三国杀</span></div>
+          <!-- 视频列表 -->
+          <div class="video-list-wrap">
+            <div class="">
+              <ul class="clearfix">
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 视频列表 end-->
+        </div>
+        <!-- 三国杀 end-->
+
+        <!-- 单机游戏 -->
+        <div keyword="pcgame" class="game-box">
+          <div class="game-name"><i class="icon-m icon-right js-toGameLive"></i><span name="title">单机游戏</span></div>
+          <!-- 视频列表 -->
+          <div class="video-list-wrap">
+            <div class="">
+              <ul class="clearfix">
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 视频列表 end-->
+        </div>
+        <!-- 单机游戏 end-->
+
+        <!-- 炉石传说 -->
+        <div keyword="lushichuanshuo" class="game-box">
+          <div class="game-name"><i class="icon-m icon-right js-toGameLive"></i><span name="title">炉石传说</span></div>
+          <!-- 视频列表 -->
+          <div class="video-list-wrap">
+            <div class="">
+              <ul class="clearfix no-border">
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+                <li tapmode="active" onclick="enterRooms(this);">
+                  <div>
+                    <div class="img-mask"></div>
+                    <img src="../image/default_bpic.png" alt="" class="game-pic lazy">
+                  </div>
+                  <div class="til">加载中...</div>
+                  <div class="detail clearfix">
+                    <span class="audience"><i class="icon-m icon-spectator"></i><span class="js-online">加载中...</span></span>
+                    <p class="anchor"><i class="icon-m icon-boy"></i><span class="js-nickname">加载中</span></p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <!-- 视频列表 end-->
+        </div>
+        <!-- 炉石传说 end-->
+      </div>
+      <!-- 首页 end-->
+
+
+      <!-- loading页 -->
+      <div id="loadPage" class="no-page hidden">
+        <img src="../image/loading2.gif">
+        <p>正在加载中……</p>
+      </div>
+      <!-- loading页 -->
+
+      <!-- 断网没有页面 -->
+      <div id="noPage" class="no-page hidden">
+        <img src="../image/no-page.gif">
+        <p>页面加载失败</p>
+        <p>请点击页面刷新</p>
+      </div>
+      <!-- 断网没有页面 -->
+
+    </div>
+
+    <!-- <div id="lottery" style="position:fixed; width:100px; height:100px; line-height:100px; background:red; bottom:20px; right:20px; color:black; text-align:center; font-size:50px;">
+    <span id="lotteryCount">-</span>
+    </div> -->
+
+  <!-- 悬浮的礼物icon -->
+  <div id="lottery" class="gift-pop hidden">
+    <span id="lotteryCount">0</span>
+  </div>
+  <!-- 悬浮的礼物icon end-->
+
+  </body>
+  <script src="../script/lib/zepto.min.js"></script>
+  <script src="../script/api.js"></script>
+  <script src="../script/lib/jquery.lazyload.js"></script>
+  <script src='../script/lib/swipe/swipe.js'></script>
+
+  <script src="../script/common.js"></script>
+  <script src="../script/main.js"></script>
+</html>

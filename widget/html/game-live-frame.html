@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+  <head>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <meta charset='utf-8'>
+    <meta content="yes" name="apple-mobile-web-app-capable" />
+    <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+    <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/api.css">
+  </head>
+  <body>
+    <div id="wrap" class="wrap">
+      <!-- 首页 -->
+      <div id="homePage" class="home-page">
+        <!-- 视频列表 -->
+        <div class="video-list-wrap" id="main">
+          <ul class="clearfix" id="liveList">
+          </ul>
+        </div>
+        <!-- 视频列表 end-->
+      </div>
+      <!-- 首页 end-->
+
+      <!-- loading页 -->
+      <div id="loadPage" class="no-page">
+        <img src="../image/loading2.gif">
+        <p>正在加载中……</p>
+      </div>
+      <!-- loading页 -->
+
+      <!-- 断网没有页面 -->
+      <div id="noPage" class="no-page hidden">
+        <img src="../image/no-page.gif">
+        <p>页面加载失败</p>
+        <p>请点击页面刷新</p>
+      </div>
+      <!-- 断网没有页面 -->
+
+    </div>
+  </body>
+  <script src="../script/lib/zepto.min.js"></script>
+  <script src="../script/lib/jquery.lazyload.js"></script>
+  <script src="../script/api.js"></script>
+  <script src="../script/common.js"></script>
+  <script src="../script/gameLive_frame.js"></script>
+</html>

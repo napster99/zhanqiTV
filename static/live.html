@@ -1,0 +1,446 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="maximum-scale=1,minimum-scale=1,user-scalable=1,width=device-width,initial-scale=1"/>
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/room.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/api.css">
+  <title>直播间</title>
+</head>
+<body class="hairlines"><!--  -->
+<div class="wrap">
+
+  <!-- 直播间页面 -->
+  <div class="live-room rooms-main">
+
+    <!-- tab -->
+    <div class="tab">
+      <ul class="clearfix">
+        <!-- 选中时，在2前面加上-current -->
+        <li><i class="icon-m icon-introduce2"></i>简介</li>
+        <li><i class="icon-m icon-chat2 "></i>聊天</li>
+        <li><i class="icon-m icon-video2"></i>视频</li>
+        <li><i class="icon-m icon-ranking2"></i>排行</li>
+      </ul>
+    </div>
+    <!-- tab end-->
+
+    <!-- tab简介 -->
+    <div class="intro-list-bd">
+      <div class="intro-box">
+
+        <div class="intro-hd">
+          <div class="clearfix">
+            <span class="user-pic-box">
+            <img src="../image/temp/user.jpg" alt="" class="user-pic">
+            </span>
+            <div class="intro-r">
+              <p class="til">贝利解说打野潘森5杀超神</p>
+              <p><i class="anchor-level level-1"></i><span class="anchor-name">贝利</span><span class="state-btn state-btn-gray">未开播</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div class="intro-bd">
+          正在直播：<span class="game-name">英雄联盟</span><span class="count">643888</span>观众
+        </div>
+
+        <div class="intro-ft">
+          <div class="til">
+            主播简介
+          </div>
+          <div class="detail">
+            英雄联盟最著名的ADC之一，为人谦逊，被国内外许多的职业玩家称赞。曾任WE.GIGABYTE.LOL战队队长兼AD，曾担任队内上单，后转型AD。S2到S3赛季的微笑被认为是全球最好的ADC选手，无论走位还是补刀技术皆令对手汗颜，也曾在S3单排登顶韩服第一，草丛埋伏单杀对方Carry的战术至今依然为人津津乐道。
+          </div>
+        </div>
+
+      </div>
+      
+      <div class="ft-btn ft-btn-gray">
+        <i class="icon-m icon-subscribe2"></i><span>订阅</span>
+      </div>
+    </div>
+    <!-- tab简介 end-->
+
+    <!-- tab聊天 -->
+    <div id="chatList" class="chat-list-bd">
+      <!-- <div class="title">欢迎来到<span>burning</span>的直播间，喜欢就点击右上角订阅吧。</div> -->
+      <ul class="chat-list">
+        <li>
+          <span class="name"><i class="name-bg grade-1">荷蛋</i>名字你爸妈知道吗？：</span>艾玛，圣剑快出旋风斩啊！！！
+        </li>
+        <li>
+          <span class="name"><i class="name-bg grade-2">荷蛋</i>曹小格：</span>法师打的太好了！
+        </li>
+        <li>欢迎<span class="name" style="color:red;"><i class="name-bg grade-15">恩恩</i>西详细</span>进入直播间</li>
+        <li>
+          <span class="name"><i class="name-bg grade-3">荷蛋</i>Sweef：</span>刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏刷屏！
+        </li>
+        <li class="myself">
+          <span class="name"><i class="name-bg grade-4">荷蛋</i>大云子：</span>艾玛呀。大家都这么腻害的啊？
+        </li>
+        <li class="super-dmin">
+          <span class="name"><i class="name-bg grade-5">荷蛋</i>张小健：</span>厉害厉害<img src="../image/qq-face/1.gif" alt="" class="qq-face">，佩服佩服！
+        </li>
+        <li>
+          <span class="name">张小健：</span>厉害厉害<img src="../image/qq-face/1.gif" alt="" class="qq-face">，佩服佩服！
+        </li>
+        <li>
+          <span class="name">天边的乌云：</span>艾玛，圣剑快出旋风斩啊！！！
+        </li>
+        <li>
+          <span class="name">天边的乌云</span>送给主播<img src="../image/temp/gift.jpg" alt="" class="gift-icon"><i class="count">66</i>
+        </li>
+        <li>
+          <span class="name">张小健：</span>厉害厉害<img src="../image/qq-face/1.gif" alt="" class="qq-face">，佩服佩服！
+        </li>
+        <li>
+          <span class="name"><i class="name-bg anchor">主播</i>天边的乌云：</span>艾玛，圣剑快出旋风斩啊！！！
+        </li>
+        <li>
+          <span class="name">天边的乌云</span>送给主播<img src="../image/temp/gift.jpg" alt="" class="gift-icon"><i class="count">66</i>
+        </li>
+        <li>
+          <span class="name"><i class="name-bg grade-6">荷蛋</i>天边的乌云：</span>艾玛，圣剑快出旋风斩啊！！！
+        </li>
+        <li>
+          <span class="name"><i class="name-bg grade-7">荷蛋</i>天边的乌云</span>送给主播<img src="../image/temp/gift.jpg" alt="" class="gift-icon"><i class="count">66</i>
+        </li>
+        <li>
+          <span class="name">天边的乌云</span>送给主播<img src="../image/temp/gift.jpg" alt="" class="gift-icon"><i class="count">66</i>
+        </li>
+        <li>
+          <span class="name">天边的乌云</span>送给主播<img src="../image/temp/gift.jpg" alt="" class="gift-icon"><i class="count">66</i>
+        </li>
+        <li>
+          <span class="name"><i class="name-bg admin">超管</i>张小健：</span>厉害厉害<img src="../image/qq-face/1.gif" alt="" class="qq-face">，佩服佩服！
+        </li>
+        <li>
+          <span class="name"><i class="name-bg anchor">主播</i>天边的乌云：</span>艾玛，圣剑快出旋风斩啊！！！
+        </li>
+      </ul>
+    </div>
+    <!-- tab聊天 end-->
+
+    <!-- tab视频 -->
+    <div class="video-list-bd">
+      <ul>
+        <li>
+          <div class="video-list-li">
+            <div class="clearfix">
+              <img src="../image/temp/pic01.jpg" alt="" class="game-pic">
+              <div class="detail-box">
+                <p class="til">微笑19:00准时开播微笑19:00准时开播</p>
+                <p class="count"><span>3600</span>次播放</p>
+                <p class="date">2013-03-15</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="video-list-li">
+            <div class="clearfix">
+              <img src="../image/temp/pic01.jpg" alt="" class="game-pic">
+              <div class="detail-box">
+                <p class="til">微笑19:00准时开播微笑19:00准时开播</p>
+                <p class="count"><span>3600</span>次播放</p>
+                <p class="date">2013-03-15</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li class="active">
+          <div class="video-list-li">
+            <div class="clearfix">
+              <img src="../image/temp/pic01.jpg" alt="" class="game-pic">
+              <div class="detail-box">
+                <p class="til">微笑19:00准时开播微笑19:00准时开播</p>
+                <p class="count"><span>3600</span>次播放</p>
+                <p class="date">2013-03-15</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="video-list-li">
+            <div class="clearfix">
+              <img src="../image/temp/pic01.jpg" alt="" class="game-pic">
+              <div class="detail-box">
+                <p class="til">微笑19:00准时开播微笑19:00准时开播</p>
+                <p class="count"><span>3600</span>次播放</p>
+                <p class="date">2013-03-15</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="video-list-li">
+            <div class="clearfix">
+              <img src="../image/temp/pic01.jpg" alt="" class="game-pic">
+              <div class="detail-box">
+                <p class="til">微笑19:00准时开播微笑19:00准时开播</p>
+                <p class="count"><span>3600</span>次播放</p>
+                <p class="date">2013-03-15</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="video-list-li">
+            <div class="clearfix">
+              <img src="../image/temp/pic01.jpg" alt="" class="game-pic">
+              <div class="detail-box">
+                <p class="til">微笑19:00准时开播微笑19:00准时开播</p>
+                <p class="count"><span>3600</span>次播放</p>
+                <p class="date">2013-03-15</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="video-list-li">
+            <div class="clearfix">
+              <img src="../image/temp/pic01.jpg" alt="" class="game-pic">
+              <div class="detail-box">
+                <p class="til">微笑19:00准时开播微笑19:00准时开播</p>
+                <p class="count"><span>3600</span>次播放</p>
+                <p class="date">2013-03-15</p>
+              </div>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="video-list-li">
+            <div class="clearfix">
+              <img src="../image/temp/pic01.jpg" alt="" class="game-pic">
+              <div class="detail-box">
+                <p class="til">微笑19:00准时开播微笑19:00准时开播</p>
+                <p class="count"><span>3600</span>次播放</p>
+                <p class="date">2013-03-15</p>
+              </div>
+            </div>
+          </div>
+        </li>
+      </ul>
+    </div>
+    <!-- tab视频 end-->
+
+    <!-- tab排行 -->
+    <div class="ranking-list-bd">
+      <ul class="ranking-tab">
+        <div class="clearfix">
+          <li>粉丝周榜</li>
+          <li class="active">粉丝总榜</li>
+        </div>
+      </ul>
+      <div class="bd">
+        <ul class="clearfix">
+          <li>
+            <i class="name-bg grade-1">荷蛋</i>
+            <span class="name">用户用用户昵称户昵称用户昵称昵称</span>
+          </li>
+          <li>
+            <i class="name-bg grade-2">荷蛋</i>
+            <span class="name">用户昵称</span>
+          </li>
+          <li>
+            <i class="name-bg grade-6">荷蛋</i>
+            <span class="name">用户昵称</span>
+          </li>
+          <li>
+            <i class="name-bg grade-9">荷蛋</i>
+            <span class="name">用户昵称</span>
+          </li>
+          <li>
+            <i class="name-bg grade-11">荷蛋</i>
+            <span class="name">用户昵称</span>
+          </li>
+          <li>
+            <i class="name-bg grade-14">荷蛋</i>
+            <span class="name">用户昵称</span>
+          </li>
+          <li>
+            <i class="name-bg grade-16">荷蛋</i>
+            <span class="name">用户昵称</span>
+          </li>
+          <li>
+            <i class="name-bg grade-18">荷蛋</i>
+            <span class="name">用户昵称</span>
+          </li>
+          <li>
+            <i class="name-bg grade-19">荷蛋</i>
+            <span class="name">用户昵称</span>
+          </li>
+          <li>
+            <i class="name-bg grade-20">荷蛋</i>
+            <span class="name">用户昵称</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- tab排行 end-->
+
+    <!-- 按时间按热度排行 -->
+    <div class="control-btn"><span>按时间</span></div>
+    <!-- 按时间按热度排行 end-->
+
+    <!-- 圣诞节 -->
+    <div class="christmas hidden"></div>
+    <!-- 圣诞节 end-->
+    <!-- 消息条数提示 -->
+    <div class="bubble-tip-box">
+      <div class="bubble-tip">99</div>
+    </div>
+    <!-- 消息条数提示 -->
+    
+  </div>
+  <!-- 直播间页面 end -->
+
+
+  <!-- 遮罩层 -->
+  <div class="mask hidden"></div>
+  <!-- 遮罩层 end-->
+  <!-- 金币pop -->
+  <div class="gold-pop hidden">
+    <div class="gold-pic"></div>
+    <div class="gold-btn">+<span>200</span>金币</div>
+  </div>
+  <!-- 金币pop end-->
+
+  <!-- 播放按钮 -->
+  <div class="play-btn">
+    <i class="icon-m icon-play"></i>
+  </div>
+  <!-- 播放按钮 end-->
+
+</div>
+</body>
+<script src="../script/lib/jquery-2.1.1.min.js"></script>
+<script type="text/javascript">
+  $(function() {
+    // $('.number1')
+
+
+
+    // var pos = 0;
+    // var speed = 1;
+
+    // var moderate = false;
+
+    // var count = 0;
+
+    // var stop = false;
+
+    // var number = 2;
+
+    // var o = setInterval(function() {
+
+    //   pos += speed;
+    //   count++;
+
+    //   if(pos >= 124*10) {
+    //     pos = 0;
+    //     count = 0;
+    //   }
+
+    //   if(count % 31 === 0 && !moderate) {
+    //     if(speed < 17) {
+    //       speed++;
+    //     }else{
+    //       speed = 17;
+    //       console.log('匀速')
+    //     }
+    //     // console.log('加速'+speed)
+    //   }
+      
+      // if(count % 31 === 0 && moderate) {
+      //   if(speed > 1) {
+      //     if(speed === 4 && !stop) { //滚动到指定位置，再进行减速
+      //       // stop = true;
+      //       alert('滚动到指定位置，再进行减速'+pos)
+      //       // clearInterval(o);
+      //       if(pos/124 === number) {
+      //         $('.number1').css('background-position','0 -' + pos + 'px');
+      //         clearInterval(o);
+      //         return;
+      //       }
+
+
+            // return;
+            // setTimeout(function() {
+            //   console.log('stop')
+            //   clearInterval(o);
+
+            // },1000);
+    //       }else{
+    //         speed--;
+    //       }
+    //     }
+    //   }
+
+    //   $('.number1').css('background-position','0 -' + pos + 'px');
+    // },10);
+
+
+    // $('#jianshu').on('click', function() {
+    //   moderate = true;
+    //   console.log('开始减速')
+    // });
+
+    // $('#jiashu').on('click', function() {
+    //   moderate = false;
+    //   console.log('开始加速')
+    //   speed = 1;
+    // });
+
+    // setTimeout(function() {
+    //   moderate = true;
+    //   console.log('开始减速')
+    // },6000);
+
+  });
+
+</script>
+</html>
+
+
+
+
+ <!--pos>>465  3.75
+ pos>>558  4.5
+ pos>>651  5.25
+ pos>>744  6
+ pos>>837  6.75
+ pos>>930  7.5
+ pos>>1023  8.25
+ pos>>1116  9
+ pos>>1209  9.75
+
+ pos>>0  0        0
+ pos>>93  0.75    1
+ pos>>186  1.5    2
+ pos>>279  2.25  
+ pos>>372  3      3
+ pos>>465  3.75   4
+ pos>>558  4.5    5
+ pos>>651  5.25   
+ pos>>744  6      6
+ pos>>837  6.75   7
+ pos>>930  7.5    8
+ pos>>1023  8.25
+ pos>>1116  9     9
+ pos>>1209  9.75 -->
+
+<!-- 
+  0
+live.html:127 186
+live.html:127 372
+live.html:127 558
+live.html:127 744
+live.html:127 930
+live.html:127 1116 -->

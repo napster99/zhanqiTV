@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+  <head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/api.css">
+  <link rel="stylesheet" href="../css/personal.css">
+  <title>编辑订阅</title>
+  </head>
+  <body>
+    <div class="wrap" id="wrap">
+      <!-- 编辑订阅 -->
+      <div class="subscribe">
+
+        <!-- 休息中模块 -->
+        <div class="module">
+          <div class="title clearfix">
+            <ul class="subscribe-edit-btn clearfix">
+              <li id="btnConfirm">确定</li>
+              <li id="btnCancel">取消</li>
+            </ul>
+            <span class="title-name">订阅列表</span>
+          </div>
+          <div class="module-bd">
+            <div class="anchor-list">
+              <ul id="anchorList">
+               <!--  '<li class="clearfix"><i class="icon-m icon-close js-unfollow" id="'+uid+'" style="padding:20px"></i>'
+              + '<img src="'+avatar+'" alt="" class="user-photo">'
+              + '<div class="pull-left"><p class="user-name">'+nickname+'</p>'
+              + '<p class="order-count">'+follows+'人订阅</p></div></li>'; -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 休息中模块 end-->
+
+        <div class="record-no hidden" id="noResult">
+          暂无订阅
+        </div>
+
+
+      </div>
+      <!-- 编辑订阅 end-->
+    </div>
+  </body>
+  <script src="../script/lib/zepto.min.js"></script>
+  <script src="../script/api.js"></script>
+  <script src="../script/common.js"></script>
+  <script src="../script/editSubscribe_frame.js"></script>
+</html>

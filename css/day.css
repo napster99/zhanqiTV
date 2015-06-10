@@ -1,0 +1,48 @@
+/*====================== 每日一问/每日签到20141019 ====================*/
+.day-box{
+  height: 100%;
+  background: #f6f7f8;
+  font-size: 16x;
+}
+.day-box .bd{padding: 34px 7px 5px;}
+.day-box .day-list {margin-bottom: 30px;}
+.day-box .day-list li{
+  padding: 14px 8px;
+  border:1px solid #ccc;
+  margin-top: -1px;
+  background: #fff;
+}
+.day-box .day-list li:first-child{border-radius: 6px 6px 0 0;}
+.day-box .day-list li:last-child{border-radius: 0 0 6px 6px;}
+.ask-page .day-list li .icon-m{
+  font-size: 21px;
+  color: #cbcbd0;
+  margin-right: 5px;
+}
+.ask-page .day-list li.active .icon-m{color: #0d7aff;}
+
+.sign-in .gold-count{
+  color: #8d8d8d;
+  margin-left: 15px;
+}
+.btn-task{
+  width: 50px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  color: #fff;
+  background: #00afff;
+  border-radius: 3px;
+  position: absolute;
+  right: 7px;
+  top: 10px;
+  z-index: 3;
+  font-size: 13px;
+  margin-right: 10px;
+}
+.btn-task.btn-after{
+  background: #b2e4ff;
+}
+.btn-task.btn-finish{
+  background: #d8d8d8;
+}

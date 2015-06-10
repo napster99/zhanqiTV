@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/api.css" />
+  <link rel="stylesheet" href="../css/common.css" />
+
+  <title>刮刮乐</title>
+</head>
+<body>
+<div class="wrap">
+  <!-- 首页 -->
+  <div class="home-page">
+    <!-- top顶部 -->
+    <div class="top-bar">
+      <div class="top-bar-bd">
+        <a id="back" href="javascript:;" class="back-btn">返回</a>
+        <a id="share" href="javascript:;" class="share-btn">分享</a>
+      </div>
+      <div class="top-bar-line"></div>
+    </div>
+    <!-- top顶部 -->
+
+    <!-- 刮刮乐活动页面 -->
+    <div class="ggl">
+      <!-- 活动banner -->
+      <div class="banner"><img src="../image/activity/ggl-banner.jpg" alt="刮刮乐"></div>
+      <!-- 活动banner end-->
+
+      <!-- 奖品展示 -->
+      <div class="prize-list">
+        <ul class="clearfix">
+          <li>
+            <img src="../image/activity/ggl-q1.png" alt="">
+            <p>iPhone6</p>
+          </li>
+          <li>
+            <img src="../image/activity/ggl-q2.png" alt="">
+            <p>大神签名照</p>
+          </li>
+          <li>
+            <img src="../image/activity/ggl-q3.png" alt="">
+            <p>金币</p>
+          </li>
+          <li>
+            <img src="../image/activity/ggl-q4.png" alt="">
+            <p>战旗币</p>
+          </li>
+        </ul>
+      </div>
+      <!-- 奖品展示 end-->
+
+      <!-- 刮奖区域 跟下面的下载区域不能共存亡-->
+      <div class="scratch-area">
+        <div class="scratch-bg">
+          <canvas class="canvas-box"></canvas>
+          <img src="../image/activity/ggl-bg.png" alt="">
+        </div>
+        <a id="lotteryAgain" href="javascript:;" class="result-btn">再来一张<span id="surplus" class="count">X0</span></a>
+      </div>
+      <!-- 刮奖区域 跟下面的下载区域不能共存亡 end-->
+
+      <!-- 下载区域 跟上面的刮奖区域不能共存亡 -->
+      <div class="down-area hidden">
+        <p>战旗TV豪礼大放送，</br>赶紧下载战旗TV客户端开启幸运刮刮乐！</p>
+        <a href="javascript:;" class="down-btn"><img src="../image/activity/down-btn.png" alt=""></a>
+      </div>
+      <!-- 下载区域 跟上面的刮奖区域不能共存亡 end-->
+
+      <div class="main">
+        <div class="til">小提示</div>
+        <ul class="tip">
+          <li>战旗tv app用户每天免费获得3张刮刮乐</li>
+          <li>刮刮乐是长期活动，奖品将不定期更新</li>
+          <li>实物奖品中奖后请去官网 (www.zhanqi.tv)“我的中奖纪录”查看</li>
+          <li>每日分享该页面(登陆后)，可提升Iphone6中奖概率</li>
+          <li>实物奖品在用户填写正确收货信息后15个工作日内发放</li>
+        </ul>
+        <div class="til">奖品展示</div>
+        <ul class="prize-show">
+          <li class="clearfix">
+            <img src="../image/activity/ggl-p1.png" alt="">
+            <div>
+              <div class="til">iPhone6</div>
+              <p>苹果公司第一款大屏幕手机不只是简简单单地放大,而是方方面面都大有提升。更适合观看高清游戏直播。</p>
+            </div>
+          </li>
+          <li class="clearfix">
+            <img src="../image/activity/ggl-p2.png" alt="">
+            <div>
+              <div class="til">大神签名照</div>
+              <p>汇集战旗所有大牌主播签名照，中奖后可指定任意一个您喜欢的大牌。</p>
+            </div>
+          </li>
+          <li class="clearfix">
+            <img src="../image/activity/ggl-p3.png" alt="">
+            <div>
+              <div class="til">金币</div>
+              <p>战旗tv虚拟货币，可购买礼物赠送主播，为其增长收入和等级。单次最高2000金币。</p>
+            </div>
+          </li>
+          <li class="clearfix">
+            <img src="../image/activity/ggl-p4.png" alt="">
+            <div>
+              <div class="til">战旗币</div>
+              <p>战旗tv虚拟货币，赠送给主播可以为其增长等级。单次最高50000战旗币。</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- 刮刮乐活动页面 end-->
+  </div>
+  <!-- 首页 end-->
+</div>
+
+<!-- 遮罩层 -->
+<div id="mask" class="mask hidden"></div>
+<!-- 遮罩层end -->
+<!-- 弹窗 -->
+<div id="popWin" class="pop hidden">
+  <p><span>金币XX</span>枚送给你，</br>不客气，请叫我雷锋</p>
+  <a href="javascript:;" class="pop-btn">去看看</a>
+</div>
+<!-- 弹窗 end-->
+
+<!-- 分享 -->
+<div id="shareCon" class="share-box hidden">
+  <div class="til"><a href="javascript:;" class="close-btn"></a>分享到</div>
+  <div class="main">
+    <ul id="shareList" class="clearfix">
+      <li name="sina">
+        <a href="javascript:;" class="share-icon sina-icon"></a>
+        <p>新浪微博</p>
+      </li>
+      <!-- <li name="qq">
+        <a href="javascript:;" class="share-icon qqkj-icon"></a>
+        <p>QQ空间</p>
+      </li>
+      <li name="weixin">
+        <a href="javascript:;" class="share-icon wx-icon"></a>
+        <p>微信</p>
+      </li> -->
+      <!-- <li>
+        <a href="javascript:;" class="share-icon qq-icon"></a>
+        <p>QQ</p>
+      </li>
+      <li>
+        <a href="javascript:;" class="share-icon txkj-icon"></a>
+        <p>腾讯微博</p>
+      </li>
+      <li>
+        <a href="javascript:;" class="share-icon db-icon"></a>
+        <p>豆瓣</p>
+      </li>
+      <li>
+        <a href="javascript:;" class="share-icon renren-icon"></a>
+        <p>人人网</p>
+      </li> -->
+    </ul>
+  </div>
+</div>
+<!-- 分享 end-->
+</body>
+
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<!-- <script src="../script/common.js"></script> -->
+<script src="../script/guagua.js"></script>
+<script src="../script/lottery.js"></script>
+</html>

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang='zh-CN'>
+  <head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/api.css">
+  <link rel="stylesheet" href="../css/personal.css">
+  </head>
+  <body>
+    <div class="wrap" id="wrap">
+      <!-- 订阅 -->
+      <div id="homePage" class="subscribe hidden">
+        <!-- 直播中模块 -->
+        <div class="module">
+          <div class="title clearfix">
+            <a href="javascript:;" class="edit-btn" onclick="api.openWin({name:'editSubscribe',url:'editSubscribe.html',delay:100,bgColor:'#FFF'});">编辑订阅</a>
+            <span class="title-name">直播中</span>
+          </div>
+          <div class="module-bd">
+            <div class="video-list-wrap">
+              <ul class="clearfix" id="liveList">
+                <!-- <div class="loading">
+                  <img src="../image/logo.gif" alt="">
+                </div> -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 直播中模块 end-->
+
+        <!-- 休息中模块 -->
+        <div class="module">
+          <div class="title">
+            <span class="title-name">休息中</span>
+          </div>
+          <div class="module-bd">
+            <div class="anchor-list">
+              <ul id="anchorList">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- 休息中模块 end-->
+
+        <div class="record-no hidden" id="noResult">
+          暂无订阅
+        </div>
+      </div>
+      <!-- 订阅 end-->
+
+
+
+      <!-- loading页 -->
+      <div id="loadPage" class="no-page">
+        <img src="../image/loading2.gif">
+        <p>正在加载中……</p>
+      </div>
+      <!-- loading页 -->
+
+      <!-- 断网没有页面 -->
+      <div id="noPage" class="no-page hidden">
+        <img src="../image/no-page.gif">
+        <p>页面加载失败</p>
+        <p>请点击页面刷新</p>
+      </div>
+      <!-- 断网没有页面 -->
+
+
+    </div>
+  </body>
+  <script src="../script/lib/zepto.min.js"></script>
+  <script src="../script/lib/jquery.lazyload.js"></script>
+  <script src="../script/api.js"></script>
+  <script src="../script/common.js"></script>
+  <script src="../script/subscribe_frame.js"></script>
+</html>

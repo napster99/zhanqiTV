@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/personal.css">
+  <link rel="stylesheet" href="../css/api.css">
+  
+  <title>我的</title>
+</head>
+<body class="hairlines">
+<div class="wrap">
+  <!-- 我的 -->
+  <div class="my-page">
+    <!-- top顶部 -->
+    <div class="my-top" id="head">
+      <i class="icon-m icon-operate js-setting" style="display:none"></i>
+      <!-- 登陆的时候显示该层-->
+      <div class="user-detail clearfix" style="display:none" id="box-center">
+        <div class="user-photo">
+          <img src="../image/avatar.png" alt="" id="photo">
+        </div>
+        
+        <!-- <div class="user-mes">
+          <p class="name" id="personal"></p>
+          <div id="payArea" class="clearfix">
+            <p class="money">金币：<span id="gold"></span></p>
+            <p class="money">战旗币：<span id="coin"></span></p>
+            <a href="javascript:;" class="add-btn" id="recharge">充值</a>
+          </div>
+        </div>
+ -->
+
+        <div class="user-mes">
+          <p class="name" id="personal"></p>
+          <div id="payArea">
+            <p class="money">
+              <i class="money-icon gold-icon">金币：</i><span id="gold"></span>
+            </p>
+            <p class="money">
+              <i class="money-icon silver-icon">战旗币：</i><span id="coin"></span>
+            </p>
+            <a href="javascript:;" class="add-btn" id="recharge">充值</a>
+          </div>
+        </div>
+      </div>
+      <!-- 登陆的时候显示该层 end-->
+ 
+      <!-- 未登录的时候显示该层 -->
+      <div class="user-detail clearfix" style="display:none" id="box-uncenter">
+        <div class="user-photo">
+          <img id="avatar" src="../image/avatar.png" alt="">
+        </div>
+        
+        <div class="user-mes">
+          <a href="javascript:;" class="register-btn" id="btn-login">登录</a>
+        </div>
+      </div>
+      <!-- 未登录的时候显示该层 end-->
+    </div>
+    <!-- top顶部 -->
+
+    <!-- 广告 -->
+    <!-- <div class="ad" id="advertisement"><img src="../image/ad.jpg" alt=""></div> -->
+    <!-- 广告 -->
+  </div>
+  <!-- 我的 end-->
+</div>
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/home.js"></script>
+</body>
+</html>

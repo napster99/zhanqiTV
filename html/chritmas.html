@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="maximum-scale=1,minimum-scale=1,user-scalable=1,width=device-width,initial-scale=1"/>
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/api.css">
+  <link rel="stylesheet" href="../css/common-s.css">
+  <link rel="stylesheet" href="../css/ggl.css">
+
+  <title>刮刮乐</title>
+</head>
+<body>
+<div class="wrap">
+  <!-- 首页 -->
+  <div class="home-page">
+    <!-- top顶部 -->
+    <div class="top-bar">
+      <div class="top-bar-bd">
+        <a id="back" href="javascript:;" class="back-btn">返回</a>
+        <!-- <a id="share" href="javascript:;" class="share-btn">分享</a> -->
+      </div>
+      <div class="top-bar-line"></div>
+    </div>
+    <!-- top顶部 -->
+
+  </div>
+  <!-- 首页 end-->
+</div>
+
+</body>
+
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script>
+  apiready = function() {
+     var oPage = {
+        init : function() {
+          this.view();
+          this.listen();
+        },
+        
+        view : function() {
+          api.openFrame({
+              name: 'gift',
+              url: 'http://demo.qpdiy.com/xw/games/wechat/fruit/',
+              rect:{
+                  x:0,
+                  y: 50,
+                  w:api.winHeight,
+                  h:api.winHeight - 50
+              },
+              bounces: true,
+              opaque: false,
+              bgColor: 'rgba(0,0,0,0)',
+              vScrollBarEnabled:true,
+              hScrollBarEnabled:true
+          });
+        },
+
+        listen : function() {
+          $('#back').on('click',  function() {
+            api.closeWin();
+          });
+        }
+     }
+
+     oPage.init();
+  }
+</script>
+</html>

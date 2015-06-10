@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" href="../css/api.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/settings.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <title>解码方式</title>
+</head>
+<body>
+<div class="wrap">
+  <!-- 解码方式 -->
+  <div class="settings">
+    <p class="title-s"></p>
+    <!-- 解码方式 -->
+    <ul id="decode">
+      <li name="ruan">
+        <div class="pull-right">
+          <i name="ruan" class="icon-m icon-checkmark-circle icon-radio-unchecked active"></i>
+        </div>
+        软解<span class="tip">推荐设置，不易出错</span>
+      </li>
+      <li name="ying">
+        <div class="pull-right">
+          <i name="ying" class="icon-m icon-radio-unchecked icon-checkmark-circle"></i>
+        </div>
+        硬解<span class="tip">支持部分机型，省电，不发烫</span>
+      </li>
+    </ul>
+    <!-- 解码方式 end-->
+  </div>
+</div>
+</body>
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/settings-decode_frame.js"></script>
+</html>

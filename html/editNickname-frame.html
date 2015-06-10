@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/personal.css">
+  <link rel="stylesheet" href="../css/api.css">
+  <title>修改昵称</title>
+</head>
+<body>
+<div class="wrap">
+  <div class="personal-change-name">
+    <div class="bd">
+      <!-- 修改昵称信息 -->
+      <div class="change-name">
+        <input type="text"  id="txt-nickname" name="nickname" data-type="nickname" data-required="看官老爷，请留下您的昵称" data-invalide="仅限6~24位的中英文，每个中文字算3位字符" placeholder="昵称" autocapitalize="off" />
+      </div>
+      <!-- 修改昵称信息 end -->
+
+      <!-- 底部提交按钮 -->
+      <div class="footer-btn">
+        <div class="btn-group btn-block" id="btn-editNickname-save">提交</div>
+      </div>
+      <!-- 底部提交按钮 -->
+    </div>
+  </div>
+</div>
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/personal-nickname_frame.js"></script>
+</body>
+</html>

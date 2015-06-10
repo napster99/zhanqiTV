@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/api.css">
+
+  <title>老虎机</title>
+  <style>
+    
+    /* 老虎机 */
+    .tiger{
+      position: absolute;
+      left: 50%;
+      top: 50%;
+      margin: -122px 0 0 -160px;
+      width: 320px;
+      height: 245px;
+      background: url(../image/tiger-bg.png) no-repeat;
+      background-size: contain;
+      text-align: center;
+    }
+    .tiger .close-btn{
+      width: 48px;
+      height: 48px;
+      position: absolute;
+      right: 35px;
+      top: 48px;
+      text-align: right;
+      padding: 2px 1px 0 0;
+    }
+    .tiger .close-btn i{
+      display: inline-block;
+      width: 22px;
+      height: 22px;
+      background: url(../image/tiger-close.png) no-repeat;
+      background-size: contain;
+    }
+    .tiger .title{
+      width: 145px;
+      height: 17px;
+      line-height: 17px;
+      margin: 0 auto;
+      background: #7f3900;
+      margin-top: 55px;
+      font-size: 12px;
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+    }
+    .tiger .sub-btn{
+      display: inline-block;
+      width: 180px;
+      height: 30px;
+      background: url(../image/tiger-btn.png) no-repeat;
+      background-size: contain;
+      margin-top: 15px;
+    }
+    .tiger .sub-btn.active{
+      background: url(../image/tiger-btn-active.png) no-repeat;
+      background-size: contain;
+    }
+    .tiger .number-list{
+      width: 216px;
+      height: 62px;
+      margin: 0 auto;
+      margin-top: 7px;
+    }
+    .tiger .number-list li{
+      height: 62px;
+      width: 49px;
+      margin-right: 6px;
+      float: left;
+      background: url(../image/tiger-number-s.png);
+    }
+    .tiger .number-list li.number1{background-position: 0 0;}
+    .tiger .number-list li.number2{background-position: 0 0;}
+    .tiger .number-list li.number3{background-position: 0 0;}
+    .tiger .number-list li.number4{background-position: 0 0;}
+    .tiger .number-list li:last-child{margin-right: 0;}
+  </style>
+</head>
+<body style="background-color:transparent;">
+
+  <!-- 遮罩层 -->
+  <div class="mask"></div>
+  <!-- 遮罩层 end-->
+
+ <!-- 老虎机 -->
+  <div class="tiger">
+    <a id="back" href="javascript:;" class="close-btn"><i></i></a>
+    <div id="title" class="title"></div>
+    <ul class="number-list">
+      <li class="num number1"></li>
+      <li class="num number2"></li>
+      <li class="num number3"></li>
+      <li class="num number4"></li>
+    </ul>
+    <a id="start" href="javascript:;" class="sub-btn"></a>
+  </div>
+  <!-- 老虎机 end-->
+</body>
+<script src="../script/lib/jquery-2.1.1.min.js"></script>
+<script src="../script/easing.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/pageTriger.js"></script>
+</html>

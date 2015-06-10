@@ -1,0 +1,152 @@
+/*=================================== 首页2014-10-16 ================================*/
+.home-page {
+  height: 100%;
+}
+.home-page .top-bar .operation-list{
+  float: right;
+  padding-right: 5px;
+}
+.home-page .top-bar .operation-list li{
+  float: left;
+}
+.home-page .top-bar .icon-m{
+  font-size: 22px;
+  color: #999;
+  padding: 13px;
+}
+.home-page .top-bar .icon-left{
+  position: absolute;
+  left: 0px;
+  top: -3px;
+  color: #333;
+  font-size: 18px;
+}
+.top-bar-bd img{
+  position: absolute;
+  left: 10px;
+  top: 3px;
+}
+.top-bar-bd .name{
+  position: absolute;
+  left: 50%;
+  -webkit-transform:translate(-50%,0);
+}
+.home-page .top-bar-bd{
+  padding-left:75px;
+  text-align: center;
+  font-size: 18px;
+  position: relative;
+  padding: 9px 0 6px;
+}
+.home-page .game-box{
+  padding-top: 8px;
+}
+.home-page .game-name{
+  border-left: 5px solid #1398e2;
+  margin: 5px 10px 0;
+  padding-left: 5px;
+  position: relative;
+}
+.home-page .game-name .icon-m{
+  padding: 12px 8px 12px 15px;
+  float: right;
+  margin-top: -15px;
+}
+.home-page .hd{
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+.home-page .hd ul li{
+  position: relative;
+}
+.home-page .hd ul li a{
+  display: block;
+  color: #fff;
+}
+.home-page .hd ul img.show-pic{
+  width: 100%;
+  height: 180px;
+  position: relative;
+}
+.home-page .word-box{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.home-page .title{
+  width: 100%;
+  height: 22px;
+  line-height: 22px;
+  margin-top: -22px;
+  padding-left: 10px;
+  background: rgba(0,0,0,.5);
+  position: absolute;
+  color: #dcf5fd;
+  z-index: 3;
+  font-size: 13px;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+
+.home-page .dot-box{
+  position: absolute;
+  bottom: 9px;
+  right: 8px;
+  text-align: center;
+  z-index: 4;
+}
+.home-page .dot-box .dot{
+  width: 5px;
+  height: 5px;
+  background:rgba(255,255,255,.8);
+  float: left;
+  margin-left: 5px;
+  border-radius: 5px;
+}
+.home-page .dot-box .active{
+  background: #51bbf6;
+}
+.swipe {
+  overflow: hidden;
+  visibility: hidden;
+  position: relative;
+}
+.swipe-wrap {
+  overflow: hidden;
+  position: relative;
+}
+.swipe-wrap > li {
+  float:left;
+  width:100%;
+  position: relative;
+}
+.home-page .video-list-wrap{
+  padding-bottom: 5px;
+}
+.home-page .video-list-wrap ul{
+  border-bottom: 1px solid #e7e7e7;
+  padding-bottom: 5px;
+}
+/* 首页礼物图标 */
+.gift-pop{
+  width: 65px;
+  height: 61px;
+  background: url(../image/activity/gift-icon.png) no-repeat; background-size: contain;
+  position: fixed;
+  bottom: 55px;
+  right: 5px;
+  z-index: 10;
+}
+.gift-pop span{
+  width: 20px;
+  text-align: center;
+  color: #fff;
+  font-size: 17px;
+  position: absolute;
+  right: 4px;
+  top: 4px;
+  font-weight: bold;
+}

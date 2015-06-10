@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" href="../css/api.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/settings.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <title>视频清晰度</title>
+</head>
+<body>
+<div class="wrap">
+  <!-- 视频清晰度 -->
+  <div class="settings">
+      <p class="title-s"></p>
+      <!-- 清晰度选择 -->
+      <ul id="definition">
+        <li name="super">
+          <div class="pull-right">
+            <i name="super" class="icon-m icon-checkmark-circle icon-radio-unchecked active"></i>
+          </div>
+          超清<span class="tip">需要较好的性能和网络，谨慎选择</span>
+        </li>
+        <li name="hd">
+          <div class="pull-right">
+            <i name="hd" class="icon-m icon-radio-unchecked icon-checkmark-circle"></i>
+          </div>
+          高清<span class="tip">推荐设置，适用大部分设备</span>
+        </li>
+        <li name="sd">
+          <div class="pull-right">
+            <i name="sd" class="icon-m icon-radio-unchecked icon-checkmark-circle"></i>
+          </div>
+          标清<span class="tip">流畅不发烫</span>
+        </li>
+      </ul>
+      <!-- 清晰度选择 end-->
+  </div>
+</div>
+</body>
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/settings-definition_frame.js"></script>
+</html>

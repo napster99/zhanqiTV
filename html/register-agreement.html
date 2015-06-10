@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  
+
+  <link rel="stylesheet" href="../css/api.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/form.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <title>注册协议</title>
+</head>
+<body>
+<div class="wrap">
+  <!-- 注册 -->
+  <div class="register">
+    <!-- top顶部 -->
+    <div class="top-bar">
+      <div class="top-bar-bd">
+        <p class="title">
+          <i class="icon-m icon-close" onclick="api.closeWin({animation: {type: 'none'}});"></i>
+          注册协议
+        </p>
+      </div>
+      <div class="top-bar-line"></div>
+    </div>
+    <!-- top顶部 -->
+   
+    </div>
+  </div>
+  <!-- 注册 end-->
+</div>
+
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script>
+apiready = function() {
+  
+  var header = $api.dom('.top-bar');
+    $api.fixIos7Bar(header);
+    
+    api.openFrame({
+      name: 'register-agreement-frame',
+      url: 'register-agreement-frame.html',
+      bounces: true,
+      opaque: true,
+      vScrollBarEnabled: true,
+      rect: {
+        x: 0,
+        y: $('.top-bar').offset().height,
+        w: 'auto',
+        h: 'auto'
+      }
+    });
+}
+</script>
+</body>
+</html>

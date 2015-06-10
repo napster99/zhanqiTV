@@ -1,0 +1,140 @@
+/*========================注册,登录页面20141016========================*/
+.register,.landing{
+  height: 100%;
+  font-size: 16px;
+  background: #eee;
+}
+.landing .top-bar-bd .title .btn,
+.register .top-bar-bd .title .btn{
+  position: absolute;
+  left: 20px;
+  bottom: -3px;
+  font-size: 14px;
+  color: #fff;
+  padding: 6px 12px;
+  background: #1398e2;
+  border-radius: 5px;
+}
+.landing .hd,.register .hd{
+  padding: 20px;
+  background:#eee;
+}
+.landing .hd li .indent,.register .hd li .indent{
+  padding-left: 20px;
+}
+.landing .hd li .indent p,.register .hd li .indent p{
+  margin: 8px 0;
+  line-height: 1.2;
+}
+.form-group{
+  width: 100%;
+  height: 46px;
+  line-height: 46px;
+  border: 1px solid #e1e1e1;
+  overflow: hidden;
+  margin-top: -1px;
+  background: #fff;
+}
+.control-label,
+.form-control{
+  float: left;
+  text-transform:none;
+}
+.control-label{
+  width: 60px;
+  text-align: right;
+}
+.register .control-label{
+  width: 92px;
+}
+.form-control{
+  width: 75%;
+  height: 44px;
+  margin-top: 1px;
+  border: none;
+  font-size: 14px;
+  background: #fff;
+  position: relative;
+  z-index: 3;
+}
+.register .form-control{
+  width: 60%;
+}
+.form-group-first{
+  border-radius: 6px 6px 0 0;
+}
+.form-group-last{
+  border-radius: 0 0 6px 6px;
+}
+.btn-box{
+  padding:0 20px 20px;
+}
+.landing .cutting-line{
+  padding-top: 30px;
+  border-bottom: 1px solid #dcdcdc;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+  position: relative;
+}
+.landing .cutting-line span{
+  position: absolute;
+  left: 50%;
+  top: 19px;
+  margin-left: -42px;
+  padding: 0 5px;
+  background: #eee;
+  margin-top: 5px;
+  z-index: 3;
+}
+.landing .qq-btn{
+  padding: 20px;
+  margin-top: 20px;
+}
+.landing .qq-btn .btn-in{
+  padding: 10px 0;
+  font-size: 20px;
+  color: #1398e2;
+  text-align: center;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background: #fff;
+}
+.landing .qq-btn .icon-qq{
+  font-size: 19px;
+  margin-right: -6px;
+  color: #1398e2;
+}
+.register .agreement-link{
+  font-size: 14px;
+  color: #666;
+  padding:0 20px 15px;
+}
+.register .agreement-link a{
+  color: #f14500;
+}
+.register .agreement-link i{
+  display: inline-block;
+  width: 17px;
+  height: 14px;
+  margin-right: 4px;
+  background-image: url(../image/select-s.png);
+}
+.register .agreement-link i.active{
+  background-position: -25px 0;
+}
+.register-agreement{
+  font-size: 14px;
+  color: #666;
+}
+.register-agreement ul li{
+  margin-bottom: 20px;
+  line-height: 1.3;
+}
+.register-agreement ul li .title{
+  color: #333;
+  margin-bottom: 5px;
+}
+.register-agreement ul li .detail{
+  line-height: 1.2;
+}

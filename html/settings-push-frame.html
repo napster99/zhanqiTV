@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+
+  <link rel="stylesheet" href="../css/api.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/settings.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../script/lib/ratchet/ratchet.css">
+  <title>推送设置</title>
+</head>
+<body>
+<div class="wrap">
+  <div class="settings">
+    <p class="title-s"></p>
+    <!-- 一种情况 -->
+    <div id="push">
+      <ul>
+        <li>
+          <div id="pushCon" class="pull-right">
+            <div class="toggle active" id="pushSwitch">
+              <div class="toggle-handle"></div>
+            </div>
+          </div>
+          订阅推送
+        </li>
+      </ul>
+    </div>
+    <!-- 一种情况 end-->
+    <!-- 另外一种情况时显示 -->
+    <p id="pushClose" class="tip-middle hidden">
+      系统检测到您没有打开战旗TV客户端推送，请在系统【设置】-通知中找到应用程序{战旗TV}打开新消息提醒。
+    </p>
+    <!-- 另外一种情况时显示 end-->
+  </div>
+</div>
+</body>
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/lib/ratchet/ratchet.js"></script>
+<script src="../script/settings-push_frame.js"></script>
+</html>

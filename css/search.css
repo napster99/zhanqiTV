@@ -1,0 +1,121 @@
+/*================================= 搜索页 20141017=========================*/
+.search-page .search-wrap{
+  height: 50px;
+  padding: 15px 15px 0 7px;
+}
+.search-page .cancel-btn{
+  float: right;
+  font-size: 14px;
+  color: #1398e2;
+  padding-top: 5px;
+}
+.search-page .search-bg{
+  width: 85%;
+  height: 25px;
+  border:1px solid #cdcdcd;
+  border-radius: 3px;
+  background:#fff;
+  padding: 4px 5px;
+}
+.search-page .search-bg .icon-m{
+  color: #ccc;
+}
+.search-page .search-bg .input-search{
+  width: 90%;
+  line-height: 15px;
+  font-size: 14px;
+  color: #999;
+  border:none;
+  background: none;
+}
+.search-history{
+  color: #333;
+}
+.search-history ul li{
+  padding: 14px 0 15px 8px;
+  border-bottom: 1px solid #ccc;
+}
+.search-history ul li .icon-timepiece{
+  margin-right: 8px;
+}
+.search-history ul li .search-result{
+  width: 70%;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.search-history .icon-m{
+  color: #9d9d9d;
+  font-size: 16px;
+}
+.search-history .icon-close{
+  font-size: 12px;
+  padding: 15px;
+}
+.search-history .clear-history{
+  text-align: center;
+  color: #e12815;
+}
+.search-page .search-no{
+  text-align: center;
+  font-size: 12px;
+  color: #999;
+  padding-top: 3px;
+}
+.tab-c{
+  padding: 10px 7px;
+  font-size: 12px;
+  background: #eee;
+  border-bottom: 1px solid #ccc;
+}
+.tab-c ul li{
+  float: left;
+  width: 50%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  border: 1px solid #cbcbcb;
+  background: #fff;
+  color: #666;
+}
+.tab-c ul li:first-child{
+  border-radius: 5px 0 0 5px;
+}
+.tab-c ul li:last-child{
+  border-radius: 0 5px 5px 0;
+  margin-left: -1px;
+}
+.tab-c ul li.active{
+  background: #1398e2;
+  border-color: #1398e2;
+  color: #fff;
+}
+.search-room .video-list-wrap,.search-anchor{
+  background: #fff;
+}
+.anchor-list ul li{
+  border-bottom: 1px solid #cbcbcb;
+  padding: 5px 7px;
+}
+.anchor-list ul li .user-name{
+  font-size: 16px;
+  margin-top: 7px;
+}
+.anchor-list ul li .order-count{
+  font-size: 12px;
+  color: #999;
+  margin-top: 5px;
+}
+.anchor-list .user-photo{
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  float: left;
+  margin-right: 10px;
+}
+.search-tab-no{
+  text-align: center;
+  color: #999;
+  font-size: 12px;
+  padding: 30px;
+}

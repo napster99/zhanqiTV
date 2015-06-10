@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>直播页面</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/api.css">
+  <link rel="stylesheet" href="../css/room.css">
+
+</head>
+<body>
+
+  <div id="wrap" class="rooms-main">
+    <!-- tab视频 对应的视频部分 -->
+    <div name="content" class="video-list-bd hidden">
+      <ul id="videoList">
+      </ul>
+    </div>
+    <!-- tab视频 对应的视频部分 end-->
+
+
+  <!-- 按时间按热度排行 -->
+  <div id="sortKey" name="content" which="videoNews" class="control-btn hidden"><span>按时间</span></div>
+  <!-- 按时间按热度排行 end-->
+
+  <!-- loading页 -->
+  <div id="loadPage" class="no-page">
+    <img src="../image/loading2.gif">
+    <p>正在加载中……</p>
+  </div>
+  <!-- loading页 -->
+
+  <!-- 暂无视频数据 -->
+  <div id="noPage" class="no-page hidden">
+    <img src="../image/no-page.gif">
+    <p>暂无视频数据</p>
+  </div>
+  <!-- 暂无视频数据 -->
+
+  </div>
+
+</body>
+
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/lib/jquery.lazyload.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/rooms-video-frame.js"></script>
+</html>

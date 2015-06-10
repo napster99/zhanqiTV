@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+  <title>直播页面</title>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+  <link rel="stylesheet" href="../css/api.css">
+  <link rel="stylesheet" href="../css/room.css">
+
+</head>
+<body class="rooms-main">
+    <!-- tab简介 -->
+    <div id="mainCon" class="intro-list-bd hidden">
+      <div class="intro-box">
+        <div class="intro-hd ">
+          <div class="clearfix">
+            <span class="user-pic-box"><img id="avatar" src="../image/avatar.png" alt="" class="user-pic"></span>
+            <div class="intro-r">
+              <p class="til" id="roomName">--</p>
+              <p><i id="anchorLevel" class="anchor-level"></i><span class="anchor-name" id="nickname">--</span><span id="stateBtn" class="state-btn">--</span></p>
+            </div>
+          </div>
+        </div>
+
+        <div id="onLive" class="intro-bd">
+          正在直播：<span class="game-name" id="gameName">--</span><span class="count" id="online">--</span>观众
+        </div>
+
+        <div class="intro-ft">
+          <div class="til">
+            主播简介
+          </div>
+          <div id="roomNotice" class="detail">加载中...
+          </div>
+        </div>
+
+      </div>
+       <!-- ft-btn-gray -->
+      <div id="followBtn" class="ft-btn hidden">
+        <i class="icon-m icon-subscribe2"></i><span>订阅</span>
+      </div>
+    </div>
+    <!-- tab简介 end-->
+
+
+    <!-- loading页 -->
+    <div id="loadPage" class="no-page">
+      <img src="../image/loading2.gif">
+      <p>正在加载中……</p>
+    </div>
+    <!-- loading页 -->
+
+</body>
+
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/rooms-profile-frame.js"></script>
+</html>

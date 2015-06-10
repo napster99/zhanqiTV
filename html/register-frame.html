@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+  <meta charset="UTF-8">
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <link rel="stylesheet" href="../css/api.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/form.css">
+  <link rel="stylesheet" href="../css/font-icon.css">
+
+  <title>注册</title>
+</head>
+<body>
+<div class="wrap" style="background: #eee">
+  <!-- 注册 -->
+  <div class="register">
+    
+    
+      <!-- 主内容区域 -->
+      <form class="hd" id="box-reg">
+        <!-- Group -->
+        <div class="form-group form-group-first">
+          <label for="" class="control-label">账号：</label>
+          <input type="text" class="form-control" name="account" data-type="account" data-required="看官老爷，请留下您的账号" data-invalide="账号格式：5~16个字符，允许字母、数字、下划线" placeholder="请输入您的账号" autocapitalize="off" />
+        </div>
+        <!-- // Group END -->
+
+        <!-- Group -->
+        <div class="form-group">
+          <label for="" class="control-label">昵称：</label>
+          <input type="text" class="form-control" name="nickname" data-type="nickname" data-required="看官老爷，请留下您的昵称" data-invalide="昵称格式：仅限6~24位的中英文，每个中文字算3位字符" placeholder="请输入昵称" autocapitalize="off"/>
+        </div>
+        <!-- // Group END -->
+
+        <!-- Group -->
+        <div class="form-group">
+          <label for="" class="control-label">密码：</label>
+          <input type="password" class="form-control" id="password-input" name="password" data-type="password" data-required="看官老爷，请留下您的密码" data-invalide="密码这么简单被盗了你女朋友会打你的！" placeholder="请输入密码" autocapitalize="off" />
+        </div>            
+        <!-- // Group END -->
+
+        <!-- Group -->
+        <div class="form-group">
+          <label for="" class="control-label">确认密码：</label>
+          <input type="password" class="form-control" id="password-input-confirm" data-type="password" data-required="看官老爷，请留下您的密码" data-confirm="两次密码不一致" placeholder="请确认密码" autocapitalize="off" />
+        </div>            
+        <!-- // Group END -->
+
+        <!-- Group -->
+        <div class="form-group form-group-last">
+          <label for="" class="control-label">邮箱：</label>
+          <input type="email" class="form-control" name="email" data-type="email" data-required="看官老爷，请留下您的邮箱" data-invalide="请输入正确的邮箱格式" placeholder="安全邮箱" autocapitalize="off" />
+        </div>            
+        <!-- // Group END -->
+      </form>
+      <!-- 主内容区域 end -->
+
+      <div class="agreement-link">
+        <i id="btn-agree"></i>我已阅读并同意<a href="javascript:;" id="btn-agreement">注册协议</a>和<a href="javascript:;" id="btn-privacy">隐私政策</a>
+      </div>
+    
+      <!-- btn -->
+      <div class="btn-box">
+        <a href="javascript:;" class="btn-group btn-block" id="btn-reg">注册</a>
+      </div>
+      <!-- btn end-->
+    
+  </div>
+  <!-- 注册 end-->
+</div>
+
+<script src="../script/lib/zepto.min.js"></script>
+<script src="../script/api.js"></script>
+<script src="../script/common.js"></script>
+<script src="../script/reg.js"></script>
+<script src="../script/reg_frame.js"></script>
+</body>
+</html>
